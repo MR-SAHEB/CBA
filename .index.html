@@ -1,0 +1,2797 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="ACCA Education Center – Premier ACCA coaching with 95% pass rate, 5000+ students, and 100+ expert lecturers. Enroll today.">
+<meta name="keywords" content="ACCA, ACCA coaching, accountancy, finance, professional accounting, ACCA papers">
+<meta name="robots" content="index, follow">
+<title>CBA-Center of Buisness Administration </title>
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+/* =============================================
+   CSS VARIABLES & RESET
+   ============================================= */
+:root {
+  --bg: #07080f;
+  --bg2: #0d0f1a;
+  --bg3: #12152a;
+  --surface: rgba(255,255,255,0.04);
+  --surface2: rgba(255,255,255,0.07);
+  --border: rgba(255,255,255,0.08);
+  --border2: rgba(255,255,255,0.14);
+  --text: #f0f0f8;
+  --text2: #9094b0;
+  --text3: #5c6080;
+  --accent: #6c63ff;
+  --accent2: #a78bfa;
+  --accent3: #38bdf8;
+  --gold: #f59e0b;
+  --green: #22c55e;
+  --red: #ef4444;
+  --grad1: linear-gradient(135deg, #6c63ff 0%, #38bdf8 100%);
+  --grad2: linear-gradient(135deg, #a78bfa 0%, #6c63ff 100%);
+  --grad3: linear-gradient(135deg, #f59e0b 0%, #ef4444 100%);
+  --glow: 0 0 40px rgba(108,99,255,0.25);
+  --glow2: 0 0 60px rgba(108,99,255,0.15);
+  --shadow: 0 8px 32px rgba(0,0,0,0.4);
+  --shadow2: 0 24px 64px rgba(0,0,0,0.6);
+  --radius: 16px;
+  --radius2: 24px;
+  --transition: 0.3s cubic-bezier(0.4,0,0.2,1);
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --nav-h: 72px;
+}
+
+[data-theme="light"] {
+  --bg: #f4f5fb;
+  --bg2: #eceef9;
+  --bg3: #ffffff;
+  --surface: rgba(0,0,0,0.03);
+  --surface2: rgba(0,0,0,0.06);
+  --border: rgba(0,0,0,0.07);
+  --border2: rgba(0,0,0,0.12);
+  --text: #0d0f1a;
+  --text2: #4a4d6a;
+  --text3: #8a8daa;
+  --shadow: 0 8px 32px rgba(0,0,0,0.08);
+  --shadow2: 0 24px 64px rgba(0,0,0,0.12);
+  --glow: 0 0 40px rgba(108,99,255,0.15);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  overflow-x: hidden;
+  transition: background 0.4s, color 0.4s;
+
+  /* FIX ANDROID FONT ISSUE */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+
+  /* Better mobile font spacing */
+  letter-spacing: 0.2px;
+  word-spacing: 1px;
+}
+img { max-width: 100%; display: block; }
+a { text-decoration: none; color: inherit; }
+button { cursor: pointer; font-family: var(--font-body); border: none; outline: none; }
+ul { list-style: none; }
+input, textarea, select { font-family: var(--font-body); }
+
+/* =============================================
+   SCROLLBAR
+   ============================================= */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 99px; }
+
+/* =============================================
+   UTILITIES
+   ============================================= */
+.container { max-width: 1240px; margin: 0 auto; padding: 0 24px; }
+.section { padding: 100px 0; }
+.section-label {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-family: var(--font-mono); font-size: 12px; font-weight: 500;
+  color: var(--accent2); text-transform: uppercase; letter-spacing: 2px;
+  padding: 6px 14px; background: rgba(108,99,255,0.12);
+  border: 1px solid rgba(108,99,255,0.2); border-radius: 99px;
+  margin-bottom: 20px;
+}
+.section-title {
+  font-family: var(--font-display); font-size: clamp(32px,5vw,52px);
+  font-weight: 800; line-height: 1.1; margin-bottom: 16px;
+}
+.section-subtitle { font-size: 18px; color: var(--text2); max-width: 560px; }
+.grad-text {
+  background: var(--grad1); -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; background-clip: text;
+}
+.btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 13px 28px; border-radius: 12px; font-size: 15px;
+  font-weight: 600; transition: var(--transition); white-space: nowrap;
+}
+.btn-primary {
+  background: var(--grad1); color: #fff;
+  box-shadow: 0 4px 24px rgba(108,99,255,0.4);
+}
+.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 32px rgba(108,99,255,0.5); }
+.btn-outline {
+  background: var(--surface); color: var(--text);
+  border: 1px solid var(--border2); backdrop-filter: blur(12px);
+}
+.btn-outline:hover { background: var(--surface2); transform: translateY(-2px); }
+.btn-ghost { background: none; color: var(--text2); padding: 13px 20px; }
+.btn-ghost:hover { color: var(--text); }
+.badge {
+  display: inline-block; padding: 4px 12px; border-radius: 99px;
+  font-size: 12px; font-weight: 600; letter-spacing: 0.5px;
+}
+.badge-live { background: rgba(34,197,94,0.15); color: var(--green); border: 1px solid rgba(34,197,94,0.3); }
+.badge-upcoming { background: rgba(56,189,248,0.15); color: var(--accent3); border: 1px solid rgba(56,189,248,0.3); }
+.badge-completed { background: rgba(148,163,184,0.1); color: var(--text3); border: 1px solid var(--border); }
+.badge-hot { background: var(--grad3); color: #fff; }
+.glass {
+  background: var(--surface); backdrop-filter: blur(20px);
+  border: 1px solid var(--border); border-radius: var(--radius2);
+}
+.card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius2); padding: 28px; transition: var(--transition);
+}
+.card:hover { border-color: var(--border2); transform: translateY(-4px); box-shadow: var(--shadow2); }
+.tag {
+  display: inline-block; padding: 3px 10px; border-radius: 6px;
+  font-size: 12px; font-weight: 500; background: rgba(108,99,255,0.12);
+  color: var(--accent2); border: 1px solid rgba(108,99,255,0.2);
+}
+.grid-2 { display: grid; grid-template-columns: repeat(2,1fr); gap: 24px; }
+.grid-3 { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
+.grid-4 { display: grid; grid-template-columns: repeat(4,1fr); gap: 24px; }
+.flex { display: flex; }
+.flex-center { display: flex; align-items: center; justify-content: center; }
+.flex-between { display: flex; align-items: center; justify-content: space-between; }
+.gap-8 { gap: 8px; }
+.gap-16 { gap: 16px; }
+.gap-24 { gap: 24px; }
+.text-center { text-align: center; }
+.mb-8 { margin-bottom: 8px; }
+.mb-16 { margin-bottom: 16px; }
+.mb-24 { margin-bottom: 24px; }
+.mb-48 { margin-bottom: 48px; }
+.hidden { display: none !important; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); }
+
+/* =============================================
+   ANIMATIONS
+   ============================================= */
+@keyframes fadeUp { from { opacity:0; transform:translateY(30px); } to { opacity:1; transform:translateY(0); } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes float { 0%,100% { transform:translateY(0); } 50% { transform:translateY(-12px); } }
+@keyframes pulse { 0%,100% { opacity:1; } 50% { opacity:0.5; } }
+@keyframes shimmer { from { transform:translateX(-100%); } to { transform:translateX(100%); } }
+@keyframes spin { from { transform:rotate(0deg); } to { transform:rotate(360deg); } }
+@keyframes gradMove { 0%,100% { background-position:0% 50%; } 50% { background-position:100% 50%; } }
+@keyframes countUp { from { opacity:0; transform:scale(0.8); } to { opacity:1; transform:scale(1); } }
+@keyframes blink { 0%,100% { opacity:1; } 50% { opacity:0; } }
+@keyframes slideIn { from { transform:translateX(-20px); opacity:0; } to { transform:translateX(0); opacity:1; } }
+@keyframes glow { 0%,100% { box-shadow:0 0 20px rgba(108,99,255,0.3); } 50% { box-shadow:0 0 60px rgba(108,99,255,0.6); } }
+@keyframes ripple { 0% { transform:scale(0); opacity:1; } 100% { transform:scale(4); opacity:0; } }
+@keyframes wave { 0%,100% { transform:scaleY(0.5); } 50% { transform:scaleY(1); } }
+@keyframes dotBounce { 0%,80%,100% { transform:scale(0); } 40% { transform:scale(1); } }
+@keyframes bgShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-fadeup { animation: fadeUp 0.6s ease both; }
+.animate-float { animation: float 3s ease-in-out infinite; }
+.anim-delay-1 { animation-delay: 0.1s; }
+.anim-delay-2 { animation-delay: 0.2s; }
+.anim-delay-3 { animation-delay: 0.3s; }
+.anim-delay-4 { animation-delay: 0.4s; }
+.anim-delay-5 { animation-delay: 0.5s; }
+
+/* scroll reveal */
+.reveal { opacity: 0; transform: translateY(32px); transition: opacity 0.7s ease, transform 0.7s ease; }
+.reveal.visible { opacity: 1; transform: none; }
+.reveal-left { opacity: 0; transform: translateX(-32px); transition: opacity 0.7s ease, transform 0.7s ease; }
+.reveal-left.visible { opacity: 1; transform: none; }
+.reveal-right { opacity: 0; transform: translateX(32px); transition: opacity 0.7s ease, transform 0.7s ease; }
+.reveal-right.visible { opacity: 1; transform: none; }
+
+/* =============================================
+   LOADING SCREEN
+   ============================================= */
+#loading-screen {
+  position: fixed; inset: 0; z-index: 9999;
+  background: var(--bg); display: flex; flex-direction: column;
+  align-items: center; justify-content: center; gap: 24px;
+  transition: opacity 0.5s ease;
+}
+.loader-logo {
+  font-family: var(--font-display); font-size: 32px; font-weight: 800;
+  background: var(--grad1); -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; background-clip: text;
+}
+.loader-bar { width: 200px; height: 3px; background: var(--border); border-radius: 99px; overflow: hidden; }
+.loader-fill { height: 100%; background: var(--grad1); border-radius: 99px; animation: loadProgress 1.5s ease forwards; }
+@keyframes loadProgress { from { width: 0; } to { width: 100%; } }
+#loading-screen.fade-out { opacity: 0; pointer-events: none; }
+
+/* =============================================
+   NOISE TEXTURE OVERLAY
+   ============================================= */
+body::before {
+  content: '';
+  position: fixed; inset: 0; z-index: 0; pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+  opacity: 0.4;
+}
+
+/* =============================================
+   BACKGROUND ORBS
+   ============================================= */
+.bg-orbs {
+  position: fixed; inset: 0; z-index: 0; pointer-events: none; overflow: hidden;
+}
+.orb {
+  position: absolute; border-radius: 50%; filter: blur(80px);
+  animation: float 8s ease-in-out infinite;
+}
+.orb-1 { width: 500px; height: 500px; background: rgba(108,99,255,0.12); top: -100px; right: -100px; animation-duration: 9s; }
+.orb-2 { width: 400px; height: 400px; background: rgba(56,189,248,0.08); bottom: 100px; left: -100px; animation-duration: 11s; animation-delay: -3s; }
+.orb-3 { width: 300px; height: 300px; background: rgba(167,139,250,0.08); top: 50%; left: 40%; animation-duration: 7s; animation-delay: -5s; }
+
+/* =============================================
+   NAVBAR
+   ============================================= */
+#navbar {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+  height: var(--nav-h); transition: all var(--transition);
+}
+#navbar.scrolled {
+  background: rgba(7,8,15,0.85); backdrop-filter: blur(24px) saturate(180%);
+  border-bottom: 1px solid var(--border);
+}
+[data-theme="light"] #navbar.scrolled { background: rgba(244,245,251,0.85); }
+.nav-inner {
+  display: flex; align-items: center; height: 100%;
+  max-width: 1240px; margin: 0 auto; padding: 0 24px; gap: 16px;
+}
+.nav-logo {
+  font-family: var(--font-display); font-size: 22px; font-weight: 800;
+  background: var(--grad1); -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; background-clip: text;
+  flex-shrink: 0; margin-right: 16px;
+}
+.nav-links { display: flex; align-items: center; gap: 4px; flex: 1; }
+.nav-link {
+  font-size: 14px; font-weight: 500; color: var(--text2);
+  padding: 8px 12px; border-radius: 8px;
+  transition: var(--transition); position: relative;
+}
+.nav-link:hover, .nav-link.active { color: var(--text); }
+.nav-link.active::after {
+  content: ''; position: absolute; bottom: 4px; left: 50%;
+  transform: translateX(-50%); width: 4px; height: 4px;
+  background: var(--accent); border-radius: 50%;
+}
+.nav-actions { display: flex; align-items: center; gap: 8px; margin-left: auto; }
+.nav-btn-login {
+  font-size: 14px; font-weight: 600; color: var(--text);
+  padding: 8px 16px; border-radius: 8px; background: var(--surface);
+  border: 1px solid var(--border2); transition: var(--transition);
+}
+.nav-btn-login:hover { background: var(--surface2); }
+.nav-btn-signup {
+  font-size: 14px; font-weight: 600; color: #fff;
+  padding: 8px 20px; border-radius: 8px; background: var(--grad1);
+  transition: var(--transition); box-shadow: 0 4px 16px rgba(108,99,255,0.35);
+}
+.nav-btn-signup:hover { transform: translateY(-1px); box-shadow: 0 6px 24px rgba(108,99,255,0.5); }
+.theme-toggle {
+  width: 40px; height: 40px; border-radius: 10px;
+  background: var(--surface); border: 1px solid var(--border2);
+  color: var(--text); font-size: 18px;
+  display: flex; align-items: center; justify-content: center;
+  transition: var(--transition); flex-shrink: 0;
+}
+.theme-toggle:hover { background: var(--surface2); }
+.hamburger {
+  display: none; flex-direction: column; gap: 5px;
+  width: 40px; height: 40px; align-items: center; justify-content: center;
+  background: var(--surface); border: 1px solid var(--border2); border-radius: 10px;
+  cursor: pointer; flex-shrink: 0;
+}
+.hamburger span {
+  display: block; width: 20px; height: 2px;
+  background: var(--text); border-radius: 2px; transition: var(--transition);
+}
+.hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+.hamburger.open span:nth-child(2) { opacity: 0; }
+.hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+#mobile-menu {
+  position: fixed; top: var(--nav-h); left: 0; right: 0; z-index: 999;
+  background: rgba(7,8,15,0.97); backdrop-filter: blur(24px);
+  border-bottom: 1px solid var(--border);
+  padding: 20px 24px; display: none; flex-direction: column; gap: 4px;
+}
+[data-theme="light"] #mobile-menu { background: rgba(244,245,251,0.97); }
+#mobile-menu.open { display: flex; animation: fadeUp 0.3s ease; }
+.mob-link {
+  font-size: 16px; font-weight: 500; color: var(--text2);
+  padding: 12px 16px; border-radius: 10px; transition: var(--transition);
+}
+.mob-link:hover { color: var(--text); background: var(--surface); }
+.mob-actions { display: flex; gap: 12px; margin-top: 12px; }
+
+/* =============================================
+   HERO SECTION
+   ============================================= */
+#hero {
+  min-height: 100vh; position: relative; overflow: hidden;
+  display: flex; align-items: center; padding-top: var(--nav-h);
+}
+.hero-bg {
+  position: absolute; inset: 0; z-index: 0;
+  background: radial-gradient(ellipse 80% 60% at 60% 40%, rgba(108,99,255,0.18) 0%, transparent 60%),
+              radial-gradient(ellipse 60% 50% at 20% 80%, rgba(56,189,248,0.12) 0%, transparent 60%);
+}
+.hero-grid {
+  position: absolute; inset: 0; z-index: 0; opacity: 0.07;
+  background-image:
+    linear-gradient(var(--border2) 1px, transparent 1px),
+    linear-gradient(90deg, var(--border2) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+.hero-inner {
+  position: relative; z-index: 1; max-width: 1240px;
+  margin: 0 auto; padding: 80px 24px; display: grid;
+  grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;
+}
+.hero-tag {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 6px 14px 6px 8px; border-radius: 99px;
+  background: rgba(108,99,255,0.1); border: 1px solid rgba(108,99,255,0.25);
+  font-size: 13px; font-weight: 500; color: var(--accent2);
+  margin-bottom: 24px; animation: fadeUp 0.6s ease both;
+}
+.hero-tag-dot {
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--green); animation: pulse 1.5s ease infinite;
+}
+.hero-title {
+  font-family: var(--font-display); font-size: clamp(38px,5.5vw,68px);
+  font-weight: 800; line-height: 1.05; margin-bottom: 20px;
+  animation: fadeUp 0.6s ease 0.1s both;
+}
+.hero-sub {
+  font-size: 18px; color: var(--text2); line-height: 1.7;
+  margin-bottom: 36px; animation: fadeUp 0.6s ease 0.2s both;
+}
+.hero-ctas {
+  display: flex; gap: 14px; flex-wrap: wrap;
+  animation: fadeUp 0.6s ease 0.3s both; margin-bottom: 56px;
+}
+.hero-stats {
+  display: flex; gap: 36px; flex-wrap: wrap;
+  animation: fadeUp 0.6s ease 0.4s both;
+}
+.stat-item { display: flex; flex-direction: column; }
+.stat-num {
+  font-family: var(--font-display); font-size: 36px; font-weight: 800;
+  background: var(--grad1); -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; background-clip: text; line-height: 1;
+}
+.stat-label { font-size: 13px; color: var(--text3); margin-top: 4px; font-weight: 500; }
+.hero-visual {
+  position: relative; animation: fadeIn 1s ease 0.3s both;
+  display: flex; align-items: center; justify-content: center;
+}
+.hero-card-main {
+  background: var(--surface); backdrop-filter: blur(24px);
+  border: 1px solid var(--border2); border-radius: 24px;
+  padding: 28px; width: 100%; max-width: 420px;
+  box-shadow: var(--shadow2), 0 0 80px rgba(108,99,255,0.12);
+  animation: float 4s ease-in-out infinite;
+}
+.hc-top { display: flex; align-items: center; gap: 14px; margin-bottom: 24px; }
+.hc-avatar {
+  width: 48px; height: 48px; border-radius: 14px;
+  background: var(--grad1); display: flex; align-items: center;
+  justify-content: center; font-size: 20px; font-weight: 800; color: #fff;
+  flex-shrink: 0;
+}
+.hc-name { font-weight: 700; font-size: 16px; }
+.hc-sub { font-size: 13px; color: var(--text2); }
+.hc-badge { margin-left: auto; }
+.progress-section { margin-bottom: 20px; }
+.progress-label { display: flex; justify-content: space-between; font-size: 13px; margin-bottom: 8px; }
+.progress-label span:first-child { color: var(--text2); }
+.progress-label span:last-child { color: var(--accent2); font-weight: 600; }
+.progress-track { height: 6px; background: var(--border); border-radius: 99px; overflow: hidden; }
+.progress-fill { height: 100%; background: var(--grad1); border-radius: 99px; transition: width 1s ease; }
+.hc-modules { display: flex; flex-direction: column; gap: 10px; }
+.hc-module {
+  display: flex; align-items: center; gap: 12px;
+  padding: 10px 14px; border-radius: 12px; background: var(--surface2);
+}
+.hc-module-icon { font-size: 18px; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; background: rgba(108,99,255,0.12); border-radius: 8px; }
+.hc-module-info { flex: 1; }
+.hc-module-name { font-size: 13px; font-weight: 600; }
+.hc-module-time { font-size: 11px; color: var(--text3); }
+.floating-card {
+  position: absolute; background: var(--surface); backdrop-filter: blur(16px);
+  border: 1px solid var(--border2); border-radius: 16px; padding: 14px 18px;
+  box-shadow: var(--shadow);
+}
+.fc-1 { top: -20px; right: -30px; animation: float 3.5s ease-in-out infinite; }
+.fc-2 { bottom: -20px; left: -30px; animation: float 5s ease-in-out infinite; animation-delay: -2s; }
+.fc-small { font-size: 12px; font-weight: 600; color: var(--text); }
+.fc-big { font-family: var(--font-display); font-size: 24px; font-weight: 800; color: var(--green); line-height: 1; }
+.fc-label { font-size: 11px; color: var(--text3); }
+
+/* hero wave */
+.hero-wave {
+  position: absolute; bottom: 0; left: 0; right: 0;
+  display: flex; align-items: flex-end; gap: 3px;
+  height: 40px; justify-content: center; opacity: 0.3;
+}
+.wave-bar {
+  width: 3px; border-radius: 2px; background: var(--accent);
+  animation: wave 1.2s ease-in-out infinite;
+}
+
+/* =============================================
+   MARQUEE / TRUST BAR
+   ============================================= */
+.trust-bar {
+  padding: 24px 0; border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border); overflow: hidden;
+  position: relative; z-index: 1;
+}
+.marquee-track {
+  display: flex; gap: 60px; width: max-content;
+  animation: marquee 30s linear infinite;
+}
+.marquee-track:hover { animation-play-state: paused; }
+@keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.trust-item {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 14px; font-weight: 600; color: var(--text3);
+  white-space: nowrap;
+}
+.trust-icon { font-size: 18px; }
+
+/* =============================================
+   COURSES SECTION
+   ============================================= */
+#courses { position: relative; z-index: 1; }
+.courses-header { margin-bottom: 56px; }
+.course-levels { display: flex; flex-direction: column; gap: 48px; }
+.course-level-title {
+  font-family: var(--font-display); font-size: 22px; font-weight: 700;
+  margin-bottom: 24px; display: flex; align-items: center; gap: 12px;
+}
+.level-badge {
+  padding: 4px 12px; border-radius: 8px; font-size: 12px; font-weight: 600;
+}
+.level-k { background: rgba(56,189,248,0.15); color: var(--accent3); }
+.level-s { background: rgba(108,99,255,0.15); color: var(--accent2); }
+.level-p { background: rgba(245,158,11,0.15); color: var(--gold); }
+.course-card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius2); padding: 24px; transition: var(--transition);
+  position: relative; overflow: hidden; cursor: pointer;
+}
+.course-card::before {
+  content: ''; position: absolute; inset: 0; opacity: 0;
+  background: var(--grad1); transition: opacity 0.4s;
+  z-index: 0;
+}
+.course-card:hover { border-color: var(--accent); transform: translateY(-6px); box-shadow: var(--glow), var(--shadow2); }
+.course-card:hover::before { opacity: 0.04; }
+.course-card > * { position: relative; z-index: 1; }
+.course-top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 16px; }
+.course-paper { font-family: var(--font-mono); font-size: 13px; color: var(--accent2); font-weight: 500; }
+.course-name { font-family: var(--font-display); font-size: 18px; font-weight: 700; margin-bottom: 8px; line-height: 1.3; }
+.course-desc { font-size: 13px; color: var(--text2); margin-bottom: 20px; line-height: 1.6; }
+.course-meta { display: flex; flex-direction: column; gap: 8px; margin-bottom: 20px; }
+.course-meta-item { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--text2); }
+.meta-icon { width: 20px; height: 20px; display: flex; align-items: center; justify-content: center; font-size: 14px; flex-shrink: 0; }
+.course-footer { display: flex; align-items: center; justify-content: space-between; }
+.course-fee { font-family: var(--font-display); font-size: 22px; font-weight: 800; color: var(--text); }
+.course-fee span { font-size: 13px; font-weight: 400; color: var(--text3); }
+.course-enroll { padding: 9px 18px; background: var(--grad1); color: #fff; border-radius: 10px; font-size: 13px; font-weight: 600; transition: var(--transition); box-shadow: 0 4px 16px rgba(108,99,255,0.3); }
+.course-enroll:hover { transform: scale(1.05); }
+.course-glow {
+  position: absolute; bottom: -40px; right: -40px; width: 120px; height: 120px;
+  border-radius: 50%; background: var(--accent); opacity: 0.06; filter: blur(30px);
+  transition: var(--transition); z-index: 0;
+}
+.course-card:hover .course-glow { opacity: 0.15; width: 160px; height: 160px; }
+
+/* =============================================
+   SCHEDULE SECTION
+   ============================================= */
+#schedule { position: relative; z-index: 1; background: var(--bg2); }
+.schedule-controls { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 32px; }
+.sched-filter {
+  padding: 8px 18px; border-radius: 99px; font-size: 13px; font-weight: 600;
+  border: 1px solid var(--border2); background: var(--surface);
+  color: var(--text2); cursor: pointer; transition: var(--transition);
+}
+.sched-filter.active, .sched-filter:hover {
+  background: var(--accent); color: #fff; border-color: transparent;
+}
+.schedule-grid { display: flex; flex-direction: column; gap: 12px; }
+.sched-item {
+  display: grid; grid-template-columns: 90px 1fr auto;
+  align-items: center; gap: 20px; padding: 18px 24px;
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 16px; transition: var(--transition);
+}
+.sched-item:hover { border-color: var(--border2); background: var(--surface2); }
+.sched-time { font-family: var(--font-mono); font-size: 13px; color: var(--text2); }
+.sched-info { }
+.sched-name { font-weight: 600; font-size: 15px; margin-bottom: 2px; }
+.sched-sub { font-size: 12px; color: var(--text3); display: flex; gap: 12px; }
+.sched-actions { display: flex; gap: 8px; align-items: center; }
+.join-btn {
+  padding: 7px 16px; background: var(--grad1); color: #fff;
+  border-radius: 8px; font-size: 12px; font-weight: 600; transition: var(--transition);
+}
+.join-btn:hover { transform: scale(1.05); }
+.rec-btn {
+  padding: 7px 16px; background: var(--surface2); color: var(--text2);
+  border: 1px solid var(--border); border-radius: 8px; font-size: 12px; font-weight: 600; transition: var(--transition);
+}
+
+/* =============================================
+   STUDENT DASHBOARD
+   ============================================= */
+#dashboard { position: relative; z-index: 1; }
+.dashboard-wrapper {
+  display: grid; grid-template-columns: 260px 1fr; gap: 24px;
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 28px; overflow: hidden; box-shadow: var(--shadow2);
+  min-height: 600px;
+}
+.dash-sidebar {
+  background: var(--bg2); border-right: 1px solid var(--border);
+  padding: 24px 16px; display: flex; flex-direction: column; gap: 4px;
+}
+.dash-logo {
+  font-family: var(--font-display); font-size: 18px; font-weight: 800;
+  padding: 8px 12px; margin-bottom: 20px;
+  background: var(--grad1); -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; background-clip: text;
+}
+.dash-nav-item {
+  display: flex; align-items: center; gap: 10px;
+  padding: 10px 14px; border-radius: 10px; font-size: 14px;
+  font-weight: 500; color: var(--text2); cursor: pointer; transition: var(--transition);
+}
+.dash-nav-item:hover { color: var(--text); background: var(--surface); }
+.dash-nav-item.active { color: var(--accent2); background: rgba(108,99,255,0.12); }
+.dash-nav-icon { font-size: 16px; width: 20px; text-align: center; flex-shrink: 0; }
+.dash-divider { height: 1px; background: var(--border); margin: 8px 12px; }
+.dash-main { padding: 28px; overflow: auto; }
+.dash-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; }
+.dash-greeting { font-family: var(--font-display); font-size: 22px; font-weight: 700; }
+.dash-date { font-size: 13px; color: var(--text3); }
+.dash-notif {
+  width: 40px; height: 40px; border-radius: 10px; background: var(--surface2);
+  border: 1px solid var(--border); display: flex; align-items: center;
+  justify-content: center; cursor: pointer; font-size: 16px; position: relative;
+}
+.notif-dot {
+  position: absolute; top: 8px; right: 8px; width: 8px; height: 8px;
+  background: var(--red); border-radius: 50%; border: 2px solid var(--bg2);
+}
+.dash-widgets { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; margin-bottom: 20px; }
+.dash-widget {
+  background: var(--surface2); border: 1px solid var(--border);
+  border-radius: 16px; padding: 20px;
+}
+.widget-label { font-size: 12px; color: var(--text3); font-weight: 500; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+.widget-value { font-family: var(--font-display); font-size: 28px; font-weight: 800; line-height: 1; }
+.widget-change { font-size: 12px; margin-top: 4px; }
+.widget-change.up { color: var(--green); }
+.widget-change.down { color: var(--red); }
+.dash-bottom { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.dash-panel { background: var(--surface2); border: 1px solid var(--border); border-radius: 16px; padding: 20px; }
+.panel-title { font-weight: 700; font-size: 15px; margin-bottom: 16px; display: flex; justify-content: space-between; align-items: center; }
+.panel-title a { font-size: 12px; color: var(--accent2); font-weight: 500; }
+.upcoming-item { display: flex; align-items: center; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--border); }
+.upcoming-item:last-child { border-bottom: none; padding-bottom: 0; }
+.upcoming-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); flex-shrink: 0; }
+.upcoming-info { flex: 1; }
+.upcoming-name { font-size: 13px; font-weight: 600; }
+.upcoming-time { font-size: 11px; color: var(--text3); }
+/* mini donut chart */
+.donut-wrap { display: flex; align-items: center; gap: 20px; }
+.donut-svg { flex-shrink: 0; }
+.donut-legend { display: flex; flex-direction: column; gap: 8px; }
+.donut-leg-item { display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--text2); }
+.leg-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+
+/* =============================================
+   TEACHERS SECTION
+   ============================================= */
+#teachers { position: relative; z-index: 1; background: var(--bg2); }
+.teachers-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 24px; }
+.teacher-card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius2); padding: 28px 24px; text-align: center;
+  transition: var(--transition); position: relative; overflow: hidden;
+}
+.teacher-card:hover { transform: translateY(-6px); border-color: var(--accent); box-shadow: var(--glow), var(--shadow2); }
+.teacher-avatar {
+  width: 80px; height: 80px; border-radius: 50%; margin: 0 auto 16px;
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-display); font-size: 28px; font-weight: 800; color: #fff;
+  background: var(--grad1); position: relative; flex-shrink: 0;
+}
+.teacher-avatar::after {
+  content: ''; position: absolute; inset: -3px; border-radius: 50%;
+  background: var(--grad1); z-index: -1; opacity: 0.3; filter: blur(8px);
+}
+.teacher-name { font-family: var(--font-display); font-size: 18px; font-weight: 700; margin-bottom: 4px; }
+.teacher-title { font-size: 13px; color: var(--accent2); font-weight: 500; margin-bottom: 8px; }
+.teacher-qual { font-size: 12px; color: var(--text3); margin-bottom: 16px; }
+.teacher-specialty { margin-bottom: 20px; }
+.teacher-socials { display: flex; justify-content: center; gap: 10px; }
+.social-btn {
+  width: 36px; height: 36px; border-radius: 8px; background: var(--surface2);
+  border: 1px solid var(--border); display: flex; align-items: center;
+  justify-content: center; font-size: 14px; transition: var(--transition);
+}
+.social-btn:hover { background: var(--accent); border-color: transparent; }
+.teacher-exp { font-size: 22px; font-weight: 800; font-family: var(--font-display); color: var(--accent2); }
+.teacher-exp-label { font-size: 11px; color: var(--text3); }
+
+/* =============================================
+   PRICING SECTION
+   ============================================= */
+#pricing { position: relative; z-index: 1; }
+.pricing-toggle { display: flex; align-items: center; gap: 16px; justify-content: center; margin-bottom: 56px; }
+.toggle-label { font-size: 15px; font-weight: 500; color: var(--text2); }
+.toggle-switch {
+  width: 52px; height: 28px; border-radius: 14px; background: var(--surface2);
+  border: 1px solid var(--border2); cursor: pointer; position: relative; transition: var(--transition);
+}
+.toggle-switch.on { background: var(--accent); border-color: transparent; }
+.toggle-knob {
+  position: absolute; width: 20px; height: 20px; border-radius: 50%;
+  background: #fff; top: 3px; left: 4px; transition: var(--transition);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+.toggle-switch.on .toggle-knob { left: 28px; }
+.save-badge { background: rgba(34,197,94,0.15); color: var(--green); border: 1px solid rgba(34,197,94,0.3); border-radius: 99px; padding: 2px 10px; font-size: 12px; font-weight: 600; }
+.pricing-cards { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
+.price-card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius2); padding: 36px 28px; transition: var(--transition);
+  position: relative; overflow: hidden;
+}
+.price-card:hover { transform: translateY(-6px); box-shadow: var(--shadow2); }
+.price-card.popular {
+  border-color: var(--accent); background: linear-gradient(135deg, rgba(108,99,255,0.1), rgba(56,189,248,0.05));
+  box-shadow: var(--glow), var(--shadow2);
+}
+.popular-badge {
+  position: absolute; top: 20px; right: -30px; transform: rotate(45deg);
+  background: var(--grad1); color: #fff; font-size: 11px; font-weight: 700;
+  padding: 6px 40px; text-transform: uppercase; letter-spacing: 1px;
+}
+.price-name { font-family: var(--font-display); font-size: 20px; font-weight: 700; margin-bottom: 8px; }
+.price-desc { font-size: 14px; color: var(--text2); margin-bottom: 24px; }
+.price-amount {
+  display: flex; align-items: flex-start; gap: 4px; margin-bottom: 8px;
+}
+.price-currency { font-size: 22px; font-weight: 700; margin-top: 8px; }
+.price-num {
+  font-family: var(--font-display); font-size: 56px; font-weight: 800; line-height: 1;
+  background: var(--grad1); -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; background-clip: text;
+}
+.price-per { font-size: 14px; color: var(--text3); align-self: flex-end; padding-bottom: 8px; }
+.price-features { display: flex; flex-direction: column; gap: 12px; margin: 28px 0; }
+.price-feature { display: flex; align-items: center; gap: 10px; font-size: 14px; }
+.feat-check { width: 20px; height: 20px; border-radius: 6px; background: rgba(34,197,94,0.15); color: var(--green); display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 700; flex-shrink: 0; }
+.feat-x { background: rgba(148,163,184,0.1); color: var(--text3); }
+.price-cta { display: block; width: 100%; padding: 14px; border-radius: 12px; text-align: center; font-weight: 700; font-size: 15px; transition: var(--transition); }
+.price-cta-primary { background: var(--grad1); color: #fff; box-shadow: 0 4px 24px rgba(108,99,255,0.4); }
+.price-cta-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 32px rgba(108,99,255,0.5); }
+.price-cta-outline { background: var(--surface2); color: var(--text); border: 1px solid var(--border2); }
+.price-cta-outline:hover { background: var(--surface); }
+
+/* =============================================
+   TESTIMONIALS
+   ============================================= */
+#testimonials { position: relative; z-index: 1; background: var(--bg2); overflow: hidden; }
+.testi-slider { position: relative; overflow: hidden; }
+.testi-track { display: flex; gap: 24px; transition: transform 0.5s cubic-bezier(0.4,0,0.2,1); }
+.testi-card {
+  min-width: calc(33.33% - 16px); background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius2); padding: 28px; flex-shrink: 0;
+}
+.testi-stars { color: var(--gold); margin-bottom: 16px; font-size: 14px; }
+.testi-text { font-size: 15px; line-height: 1.7; color: var(--text2); margin-bottom: 24px; font-style: italic; }
+.testi-author { display: flex; align-items: center; gap: 12px; }
+.testi-avatar { width: 44px; height: 44px; border-radius: 50%; background: var(--grad2); display: flex; align-items: center; justify-content: center; font-weight: 700; color: #fff; font-size: 16px; flex-shrink: 0; }
+.testi-name { font-weight: 700; font-size: 14px; }
+.testi-role { font-size: 12px; color: var(--text3); }
+.testi-result { font-size: 12px; color: var(--green); font-weight: 600; margin-top: 2px; }
+.slider-controls { display: flex; justify-content: center; gap: 12px; margin-top: 32px; }
+.slider-btn { width: 44px; height: 44px; border-radius: 50%; background: var(--surface); border: 1px solid var(--border2); font-size: 16px; color: var(--text); display: flex; align-items: center; justify-content: center; cursor: pointer; transition: var(--transition); }
+.slider-btn:hover { background: var(--accent); border-color: transparent; color: #fff; }
+.slider-dots { display: flex; gap: 8px; align-items: center; }
+.slider-dot { width: 6px; height: 6px; border-radius: 99px; background: var(--border2); cursor: pointer; transition: var(--transition); }
+.slider-dot.active { background: var(--accent); width: 20px; }
+
+/* =============================================
+   CONTACT SECTION
+   ============================================= */
+#contact { position: relative; z-index: 1; }
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
+.contact-info { display: flex; flex-direction: column; gap: 28px; }
+.contact-item { display: flex; gap: 16px; align-items: flex-start; }
+.contact-icon-wrap {
+  width: 48px; height: 48px; border-radius: 14px; background: rgba(108,99,255,0.12);
+  border: 1px solid rgba(108,99,255,0.2); display: flex; align-items: center;
+  justify-content: center; font-size: 20px; flex-shrink: 0;
+}
+.contact-label { font-size: 12px; color: var(--text3); font-weight: 500; margin-bottom: 2px; }
+.contact-value { font-size: 15px; font-weight: 600; }
+.contact-form { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius2); padding: 36px; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.form-group { display: flex; flex-direction: column; gap: 8px; margin-bottom: 20px; }
+.form-label { font-size: 13px; font-weight: 600; color: var(--text2); }
+.form-input, .form-textarea, .form-select {
+  padding: 12px 16px; border-radius: 10px; font-size: 14px; color: var(--text);
+  background: var(--surface2); border: 1px solid var(--border2);
+  transition: var(--transition); outline: none; width: 100%;
+}
+.form-input:focus, .form-textarea:focus, .form-select:focus {
+  border-color: var(--accent); box-shadow: 0 0 0 3px rgba(108,99,255,0.15);
+}
+.form-textarea { resize: vertical; min-height: 120px; }
+.form-select { appearance: none; }
+.map-placeholder {
+  height: 200px; border-radius: 16px; overflow: hidden; margin-top: 28px;
+  background: var(--surface2); border: 1px solid var(--border);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 14px; color: var(--text3); position: relative;
+}
+.map-pin { font-size: 40px; animation: float 2s ease-in-out infinite; }
+
+/* =============================================
+   FOOTER
+   ============================================= */
+footer {
+  background: var(--bg2); border-top: 1px solid var(--border);
+  padding: 60px 0 28px; position: relative; z-index: 1;
+}
+.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 48px; }
+.footer-brand { }
+.footer-logo {
+  font-family: var(--font-display); font-size: 24px; font-weight: 800;
+  background: var(--grad1); -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 16px;
+}
+.footer-about { font-size: 14px; color: var(--text2); line-height: 1.7; max-width: 280px; margin-bottom: 24px; }
+.footer-socials { display: flex; gap: 10px; }
+.footer-social {
+  width: 38px; height: 38px; border-radius: 10px; background: var(--surface2);
+  border: 1px solid var(--border); display: flex; align-items: center;
+  justify-content: center; font-size: 14px; color: var(--text2); transition: var(--transition);
+}
+.footer-social:hover { background: var(--accent); border-color: transparent; color: #fff; }
+.footer-col-title { font-family: var(--font-display); font-size: 15px; font-weight: 700; margin-bottom: 20px; }
+.footer-links { display: flex; flex-direction: column; gap: 10px; }
+.footer-link { font-size: 14px; color: var(--text2); transition: var(--transition); }
+.footer-link:hover { color: var(--accent2); }
+.newsletter-form { display: flex; gap: 8px; margin-top: 16px; }
+.newsletter-input {
+  flex: 1; padding: 10px 16px; border-radius: 10px; font-size: 13px;
+  background: var(--surface2); border: 1px solid var(--border2);
+  color: var(--text); outline: none; transition: var(--transition);
+}
+.newsletter-input:focus { border-color: var(--accent); }
+.newsletter-btn {
+  padding: 10px 16px; background: var(--grad1); color: #fff;
+  border-radius: 10px; font-size: 13px; font-weight: 600; transition: var(--transition);
+}
+.newsletter-btn:hover { transform: scale(1.05); }
+.footer-bottom {
+  display: flex; justify-content: space-between; align-items: center;
+  padding-top: 24px; border-top: 1px solid var(--border);
+  font-size: 13px; color: var(--text3);
+}
+.footer-bottom-links { display: flex; gap: 20px; }
+.footer-bottom-links a { color: var(--text3); transition: var(--transition); }
+.footer-bottom-links a:hover { color: var(--accent2); }
+
+/* =============================================
+   MODAL / OVERLAY PAGES
+   ============================================= */
+.page-overlay {
+  position: fixed; inset: 0; z-index: 2000;
+  background: rgba(0,0,0,0.7); backdrop-filter: blur(8px);
+  display: flex; align-items: center; justify-content: center;
+  padding: 20px; animation: fadeIn 0.3s ease;
+}
+.modal {
+  width: 100%; max-width: 480px; max-height: 90vh; overflow-y: auto;
+  background: var(--bg2); border: 1px solid var(--border2);
+  border-radius: 28px; padding: 40px; position: relative;
+  animation: fadeUp 0.3s ease;
+}
+.modal-close {
+  position: absolute; top: 20px; right: 20px; width: 32px; height: 32px;
+  border-radius: 8px; background: var(--surface2); border: 1px solid var(--border);
+  font-size: 16px; color: var(--text2); display: flex; align-items: center; justify-content: center;
+  cursor: pointer; transition: var(--transition);
+}
+.modal-close:hover { background: var(--red); color: #fff; border-color: transparent; }
+.modal-logo { font-family: var(--font-display); font-size: 20px; font-weight: 800; background: var(--grad1); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 8px; }
+.modal-title { font-family: var(--font-display); font-size: 26px; font-weight: 800; margin-bottom: 6px; }
+.modal-sub { font-size: 14px; color: var(--text2); margin-bottom: 28px; }
+.social-login { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 24px; }
+.social-login-btn {
+  display: flex; align-items: center; justify-content: center; gap: 8px;
+  padding: 12px; border-radius: 10px; font-size: 14px; font-weight: 600;
+  border: 1px solid var(--border2); background: var(--surface2); color: var(--text);
+  cursor: pointer; transition: var(--transition);
+}
+.social-login-btn:hover { background: var(--surface); border-color: var(--accent); }
+.divider { display: flex; align-items: center; gap: 12px; margin: 20px 0; }
+.divider-line { flex: 1; height: 1px; background: var(--border); }
+.divider span { font-size: 12px; color: var(--text3); font-weight: 500; white-space: nowrap; }
+.form-group-modal { margin-bottom: 18px; }
+.form-check { display: flex; align-items: center; gap: 10px; cursor: pointer; font-size: 14px; color: var(--text2); }
+.form-check input { accent-color: var(--accent); width: 16px; height: 16px; }
+.modal-footer-text { text-align: center; font-size: 14px; color: var(--text2); margin-top: 20px; }
+.modal-footer-text a { color: var(--accent2); font-weight: 600; cursor: pointer; }
+
+/* Step form */
+.step-indicator { display: flex; justify-content: space-between; margin-bottom: 32px; position: relative; }
+.step-indicator::before {
+  content: ''; position: absolute; top: 18px; left: 10%; right: 10%;
+  height: 2px; background: var(--border);
+}
+.step-indicator-fill {
+  position: absolute; top: 18px; left: 10%;
+  height: 2px; background: var(--grad1); transition: width 0.5s ease;
+}
+.step-item { display: flex; flex-direction: column; align-items: center; gap: 8px; position: relative; z-index: 1; }
+.step-circle {
+  width: 36px; height: 36px; border-radius: 50%; background: var(--surface2);
+  border: 2px solid var(--border); display: flex; align-items: center;
+  justify-content: center; font-size: 13px; font-weight: 700; color: var(--text3);
+  transition: var(--transition);
+}
+.step-item.active .step-circle { background: var(--accent); border-color: var(--accent); color: #fff; }
+.step-item.done .step-circle { background: var(--green); border-color: var(--green); color: #fff; }
+.step-label { font-size: 11px; color: var(--text3); font-weight: 500; white-space: nowrap; }
+.step-item.active .step-label { color: var(--accent2); }
+.step-content { min-height: 200px; }
+.step-nav { display: flex; justify-content: space-between; gap: 12px; margin-top: 24px; }
+
+/* wide modal */
+.modal-wide { max-width: 700px; }
+
+/* =============================================
+   FLOATING BUTTONS
+   ============================================= */
+.float-actions {
+  position: fixed; bottom: 28px; right: 28px; z-index: 500;
+  display: flex; flex-direction: column; gap: 12px; align-items: flex-end;
+}
+.fab {
+  width: 52px; height: 52px; border-radius: 16px; display: flex;
+  align-items: center; justify-content: center; font-size: 20px;
+  cursor: pointer; transition: var(--transition); box-shadow: var(--shadow);
+  position: relative;
+}
+.fab:hover { transform: scale(1.1); }
+.fab-main { background: var(--grad1); color: #fff; width: 56px; height: 56px; box-shadow: 0 4px 24px rgba(108,99,255,0.5); animation: glow 3s ease-in-out infinite; }
+.fab-wa { background: #25d366; color: #fff; }
+.fab-chat { background: var(--bg2); border: 1px solid var(--border2); color: var(--text); }
+.fab-tooltip {
+  position: absolute; right: 68px; white-space: nowrap;
+  background: var(--bg2); border: 1px solid var(--border);
+  border-radius: 8px; padding: 6px 12px; font-size: 12px; font-weight: 600;
+  color: var(--text); opacity: 0; pointer-events: none; transition: var(--transition);
+}
+.fab:hover .fab-tooltip { opacity: 1; }
+
+/* =============================================
+   CHATBOT WIDGET
+   ============================================= */
+.chatbot-widget {
+  position: fixed; bottom: 100px; right: 28px; z-index: 800; width: 340px;
+  background: var(--bg2); border: 1px solid var(--border2); border-radius: 20px;
+  overflow: hidden; box-shadow: var(--shadow2);
+  transform: scale(0) translateY(20px) ; transform-origin: bottom right;
+  opacity: 0; transition: all 0.3s cubic-bezier(0.4,0,0.2,1);
+}
+.chatbot-widget.open { transform: scale(1) translateY(0); opacity: 1; }
+.chat-header {
+  background: var(--grad1); padding: 16px 20px;
+  display: flex; align-items: center; gap: 12px;
+}
+.chat-avatar { width: 36px; height: 36px; border-radius: 50%; background: rgba(255,255,255,0.2); display: flex; align-items: center; justify-content: center; font-size: 18px; }
+.chat-name { font-weight: 700; font-size: 14px; color: #fff; }
+.chat-status { font-size: 12px; color: rgba(255,255,255,0.7); display: flex; align-items: center; gap: 4px; }
+.chat-status-dot { width: 6px; height: 6px; background: var(--green); border-radius: 50%; animation: pulse 1.5s infinite; }
+.chat-close { margin-left: auto; color: rgba(255,255,255,0.7); font-size: 18px; cursor: pointer; }
+.chat-messages { padding: 16px; height: 240px; overflow-y: auto; display: flex; flex-direction: column; gap: 12px; }
+.chat-msg { max-width: 80%; }
+.chat-msg-bot { align-self: flex-start; }
+.chat-msg-user { align-self: flex-end; }
+.chat-bubble {
+  padding: 10px 14px; border-radius: 16px; font-size: 13px; line-height: 1.5;
+}
+.chat-msg-bot .chat-bubble { background: var(--surface2); border: 1px solid var(--border); color: var(--text); border-top-left-radius: 4px; }
+.chat-msg-user .chat-bubble { background: var(--grad1); color: #fff; border-top-right-radius: 4px; }
+.chat-typing { display: flex; gap: 4px; padding: 12px 14px; background: var(--surface2); border-radius: 16px; border-top-left-radius: 4px; width: fit-content; }
+.typing-dot { width: 6px; height: 6px; background: var(--text3); border-radius: 50%; animation: dotBounce 1.2s infinite; }
+.typing-dot:nth-child(2) { animation-delay: 0.2s; }
+.typing-dot:nth-child(3) { animation-delay: 0.4s; }
+.chat-quick { display: flex; gap: 6px; padding: 0 16px 12px; flex-wrap: wrap; }
+.quick-btn { padding: 6px 12px; border-radius: 99px; font-size: 11px; font-weight: 600; background: rgba(108,99,255,0.1); border: 1px solid rgba(108,99,255,0.2); color: var(--accent2); cursor: pointer; transition: var(--transition); }
+.quick-btn:hover { background: var(--accent); color: #fff; border-color: transparent; }
+.chat-input-row { display: flex; gap: 8px; padding: 12px 16px; border-top: 1px solid var(--border); }
+.chat-input { flex: 1; padding: 9px 14px; border-radius: 10px; font-size: 13px; background: var(--surface2); border: 1px solid var(--border); color: var(--text); outline: none; }
+.chat-send { width: 36px; height: 36px; border-radius: 10px; background: var(--grad1); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 14px; cursor: pointer; flex-shrink: 0; }
+
+/* =============================================
+   NOTIFICATION TOAST
+   ============================================= */
+.toast-container { position: fixed; top: 88px; right: 20px; z-index: 3000; display: flex; flex-direction: column; gap: 8px; }
+.toast {
+  display: flex; align-items: center; gap: 12px; padding: 14px 18px;
+  background: var(--bg2); border: 1px solid var(--border2);
+  border-radius: 14px; box-shadow: var(--shadow); min-width: 280px;
+  animation: slideIn 0.3s ease; transition: var(--transition);
+}
+.toast.removing { opacity: 0; transform: translateX(20px); }
+.toast-icon { font-size: 20px; flex-shrink: 0; }
+.toast-body { flex: 1; }
+.toast-title { font-size: 13px; font-weight: 700; }
+.toast-msg { font-size: 12px; color: var(--text2); }
+.toast-close { font-size: 14px; color: var(--text3); cursor: pointer; transition: var(--transition); }
+.toast-close:hover { color: var(--text); }
+
+/* =============================================
+   SEARCH OVERLAY
+   ============================================= */
+.search-overlay {
+  position: fixed; inset: 0; z-index: 2500; background: rgba(0,0,0,0.8);
+  backdrop-filter: blur(12px); padding: 120px 24px 24px;
+  display: flex; flex-direction: column; align-items: center;
+}
+.search-box {
+  width: 100%; max-width: 600px; background: var(--bg2);
+  border: 1px solid var(--border2); border-radius: 16px; overflow: hidden;
+  box-shadow: var(--shadow2); animation: fadeUp 0.3s ease;
+}
+.search-inner { display: flex; align-items: center; gap: 12px; padding: 16px 20px; border-bottom: 1px solid var(--border); }
+.search-icon { font-size: 18px; color: var(--text3); }
+.search-field { flex: 1; background: none; border: none; color: var(--text); font-size: 18px; outline: none; }
+.search-field::placeholder { color: var(--text3); }
+.search-results { padding: 12px; }
+.search-result-item {
+  display: flex; align-items: center; gap: 14px; padding: 10px 14px;
+  border-radius: 10px; cursor: pointer; transition: var(--transition);
+}
+.search-result-item:hover { background: var(--surface2); }
+.search-result-icon { width: 36px; height: 36px; border-radius: 8px; background: rgba(108,99,255,0.12); display: flex; align-items: center; justify-content: center; font-size: 16px; flex-shrink: 0; }
+.search-result-name { font-size: 14px; font-weight: 600; }
+.search-result-type { font-size: 12px; color: var(--text3); }
+.search-kbd { padding: 2px 8px; border-radius: 6px; background: var(--surface2); border: 1px solid var(--border); font-size: 11px; font-family: var(--font-mono); color: var(--text3); }
+
+/* =============================================
+   HERO ANNOUNCEMENT BAR
+   ============================================= */
+.announce-bar {
+  position: relative; z-index: 100;
+  background: linear-gradient(90deg, #6c63ff, #38bdf8, #a78bfa, #6c63ff);
+  background-size: 300% 100%;
+  animation: bgShift 6s ease infinite;
+  padding: 10px 24px; text-align: center; font-size: 13px;
+  font-weight: 600; color: #fff; display: flex; align-items: center;
+  justify-content: center; gap: 12px;
+}
+.announce-bar a { text-decoration: underline; opacity: 0.9; }
+.announce-close { position: absolute; right: 16px; cursor: pointer; font-size: 16px; opacity: 0.7; }
+.announce-close:hover { opacity: 1; }
+
+/* =============================================
+   BACK TO TOP
+   ============================================= */
+#back-top {
+  position: fixed; bottom: 28px; left: 28px; z-index: 500;
+  width: 44px; height: 44px; border-radius: 12px;
+  background: var(--surface); border: 1px solid var(--border2);
+  color: var(--text2); font-size: 18px;
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer; transition: var(--transition); opacity: 0; pointer-events: none;
+}
+#back-top.visible { opacity: 1; pointer-events: all; }
+#back-top:hover { background: var(--accent); border-color: transparent; color: #fff; }
+
+/* =============================================
+   ABOUT / FEATURES
+   ============================================= */
+#about { position: relative; z-index: 1; }
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+.about-feature { display: flex; gap: 16px; align-items: flex-start; padding: 20px; border-radius: 16px; transition: var(--transition); }
+.about-feature:hover { background: var(--surface); }
+.about-feat-icon { width: 44px; height: 44px; border-radius: 12px; background: rgba(108,99,255,0.12); border: 1px solid rgba(108,99,255,0.2); display: flex; align-items: center; justify-content: center; font-size: 20px; flex-shrink: 0; }
+.about-feat-title { font-weight: 700; font-size: 16px; margin-bottom: 4px; }
+.about-feat-desc { font-size: 14px; color: var(--text2); line-height: 1.6; }
+.about-visual { position: relative; }
+.about-big-card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 24px; padding: 32px; position: relative; overflow: hidden;
+}
+.about-big-card::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at top right, rgba(108,99,255,0.1), transparent 60%); }
+.acca-circle {
+  width: 120px; height: 120px; border-radius: 50%; margin: 0 auto 24px;
+  background: var(--grad1); display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-display); font-size: 36px; font-weight: 800; color: #fff;
+  box-shadow: 0 0 60px rgba(108,99,255,0.4); animation: float 4s ease-in-out infinite;
+}
+.about-stats-row { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; margin-top: 24px; }
+.about-stat { text-align: center; padding: 16px; background: var(--surface2); border-radius: 14px; }
+.about-stat-num { font-family: var(--font-display); font-size: 28px; font-weight: 800; background: var(--grad1); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+.about-stat-label { font-size: 12px; color: var(--text3); }
+
+/* =============================================
+   RESPONSIVE
+   ============================================= */
+@media (max-width: 1100px) {
+  .teachers-grid { grid-template-columns: repeat(2,1fr); }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+  .dashboard-wrapper { grid-template-columns: 1fr; }
+  .dash-sidebar { display: none; }
+}
+@media (max-width: 900px) {
+  .nav-links { display: none; }
+  .hamburger { display: flex; }
+  .hero-inner { grid-template-columns: 1fr; gap: 40px; }
+  .hero-visual { display: none; }
+  .grid-3, .grid-4 { grid-template-columns: repeat(2,1fr); }
+  .pricing-cards { grid-template-columns: 1fr; max-width: 420px; margin: 0 auto; }
+  .contact-grid { grid-template-columns: 1fr; }
+  .about-grid { grid-template-columns: 1fr; }
+  .testi-card { min-width: calc(50% - 12px); }
+  .sched-item { grid-template-columns: 80px 1fr; }
+  .sched-actions { grid-column: 1 / -1; }
+}
+@media (max-width: 600px) {
+  .section { padding: 60px 0; }
+  .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+  .hero-stats { gap: 20px; }
+  .form-row { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr; }
+  .testi-card { min-width: calc(100% - 0px); }
+  .dash-widgets { grid-template-columns: 1fr; }
+  .dash-bottom { grid-template-columns: 1fr; }
+  .modal { padding: 24px; }
+  .modal-wide { max-width: 100%; }
+  .social-login { grid-template-columns: 1fr; }
+  .float-actions { bottom: 16px; right: 16px; }
+  .chatbot-widget { width: calc(100vw - 32px); right: 16px; }
+}
+
+
+/* =============================================
+   ANDROID FONT FIX
+============================================= */
+
+@media (max-width: 768px) {
+
+  body {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .hero-title,
+  .section-title {
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+  }
+
+  p,
+  .hero-sub,
+  .section-subtitle,
+  .course-desc,
+  .testi-text {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .nav-link,
+  .mob-link,
+  .btn,
+  .form-input,
+  .form-textarea,
+  .form-select {
+    font-size: 14px;
+  }
+
+  .card,
+  .course-card,
+  .teacher-card,
+  .price-card {
+    padding: 20px;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<!-- LOADING SCREEN -->
+<div id="loading-screen">
+  <div class="loader-logo"> CBA </div>
+  <div class="loader-bar"><div class="loader-fill"></div></div>
+  <p style="font-size:13px;color:var(--text3)">Preparing your learning journey...</p>
+</div>
+
+<!-- BACKGROUND ORBS -->
+<div class="bg-orbs">
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+</div>
+
+<!-- TOAST CONTAINER -->
+<div class="toast-container" id="toastContainer"></div>
+
+<!-- ANNOUNCE BAR -->
+<!-- <div class="announce-bar" id="announceBar"> -- 
+  <!--🎉 <strong>New Batch Starting June 2025</strong> — Early bird discount: 30% off. <a href="#">Apply Now →</a>
+<!--  <span class="announce-close" onclick="document.getElementById('announceBar').style.display='none'">✕</span>
+<!--</div> 
+
+<!-- NAVBAR -->
+<nav id="navbar" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo" aria-label="CBA Home">CBA-Center of Buisness Administration</a>
+    <div class="nav-links" role="menubar">
+      <a href="#hero" class="nav-link active" role="menuitem">Home</a>
+      <a href="#courses" class="nav-link" role="menuitem">Courses</a>
+      <a href="#schedule" class="nav-link" role="menuitem">Schedule</a>
+      <a href="#teachers" class="nav-link" role="menuitem">Teachers</a>
+      <a href="#pricing" class="nav-link" role="menuitem">Pricing</a>
+      <a href="#about" class="nav-link" role="menuitem">About</a>
+      <a href="#contact" class="nav-link" role="menuitem">Contact</a>
+    </div>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" title="Toggle dark/light mode">🌙</button>
+      <button class="theme-toggle" id="searchToggle" aria-label="Search" title="Search" style="font-size:16px;">🔍</button>
+      <button class="nav-btn-login" onclick="openModal('loginModal')" aria-label="Log in">Log in</button>
+      <button class="nav-btn-signup" onclick="openModal('signupModal')" aria-label="Sign up">Sign up</button>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div id="mobile-menu" role="dialog" aria-label="Mobile navigation">
+  <a href="#hero" class="mob-link" onclick="closeMobileMenu()">🏠 Home</a>
+  <a href="#courses" class="mob-link" onclick="closeMobileMenu()">📚 Courses</a>
+  <a href="#schedule" class="mob-link" onclick="closeMobileMenu()">🗓 Schedule</a>
+  <a href="#teachers" class="mob-link" onclick="closeMobileMenu()">👨‍🏫 Teachers</a>
+  <a href="#pricing" class="mob-link" onclick="closeMobileMenu()">💰 Pricing</a>
+  <a href="#about" class="mob-link" onclick="closeMobileMenu()">ℹ️ About</a>
+  <a href="#contact" class="mob-link" onclick="closeMobileMenu()">📞 Contact</a>
+  <div class="mob-actions">
+    <button class="btn btn-outline" style="flex:1" onclick="openModal('loginModal');closeMobileMenu()">Log in</button>
+    <button class="btn btn-primary" style="flex:1" onclick="openModal('signupModal');closeMobileMenu()">Sign up</button>
+  </div>
+</div>
+
+<!-- ======================== HERO ======================== -->
+<section id="hero" aria-label="Hero section">
+  <div class="hero-bg"></div>
+  <div class="hero-grid" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-tag">
+        <span class="hero-tag-dot"></span>
+        ACCA Approved Learning Partner
+      </div>
+      <h1 class="hero-title">
+        Become a Professional<br><span class="grad-text">ACCA Qualified</span><br>Accountant
+      </h1>
+      <p class="hero-sub">
+        Join thousands of students who have transformed their careers through our expert-led, globally recognized ACCA preparation program. Start your journey to financial excellence today.
+      </p>
+      <div class="hero-ctas">
+        <button class="btn btn-primary" onclick="openModal('registerModal')">
+          🎓 Enroll Now
+        </button>
+        <button class="btn btn-outline" onclick="document.getElementById('schedule').scrollIntoView({behavior:'smooth'})">
+          📅 View Schedule
+        </button>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-num" data-count="5000">0</span>
+          <span class="stat-label">Students Enrolled</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num" data-count="95" data-suffix="%">0%</span>
+          <span class="stat-label">Pass Rate</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num" data-count="100" data-suffix="+">0+</span>
+          <span class="stat-label">Expert Lectures</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num" data-count="12">0</span>
+          <span class="stat-label">Years Excellence</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-card-main">
+        <div class="hc-top">
+          <div class="hc-avatar">S</div>
+          <div>
+            <div class="hc-name">Sarah Ahmed</div>
+            <div class="hc-sub">ACCA Student · Strategic Level</div>
+          </div>
+          <div class="hc-badge badge badge-live">Live</div>
+        </div>
+        <div class="progress-section">
+          <div class="progress-label"><span>Overall Progress</span><span>68%</span></div>
+          <div class="progress-track"><div class="progress-fill" style="width:68%"></div></div>
+        </div>
+        <div class="progress-section">
+          <div class="progress-label"><span>SBL Paper</span><span>82%</span></div>
+          <div class="progress-track"><div class="progress-fill" style="width:82%"></div></div>
+        </div>
+        <div class="hc-modules">
+          <div class="hc-module">
+            <div class="hc-module-icon">📊</div>
+            <div class="hc-module-info">
+              <div class="hc-module-name">Strategic Business Leader</div>
+              <div class="hc-module-time">Live now · 47 students online</div>
+            </div>
+            <span class="badge badge-live">●</span>
+          </div>
+          <div class="hc-module">
+            <div class="hc-module-icon">💰</div>
+            <div class="hc-module-info">
+              <div class="hc-module-name">Advanced Financial Mgt</div>
+              <div class="hc-module-time">Tomorrow · 10:00 AM</div>
+            </div>
+            <span class="badge badge-upcoming">Soon</span>
+          </div>
+          <div class="hc-module">
+            <div class="hc-module-icon">📋</div>
+            <div class="hc-module-info">
+              <div class="hc-module-name">Financial Reporting</div>
+              <div class="hc-module-time">Completed · Watch again</div>
+            </div>
+            <span class="badge badge-completed">Done</span>
+          </div>
+        </div>
+      </div>
+      <div class="floating-card fc-1">
+        <div class="fc-small">🏆 Pass Rate</div>
+        <div class="fc-big">95%</div>
+        <div class="fc-label">National Average: 47%</div>
+      </div>
+      <div class="floating-card fc-2">
+        <div class="fc-small">📈 Next Exam</div>
+        <div style="font-weight:700;font-size:15px;margin:4px 0;">June 2025</div>
+        <div class="fc-label">Registration Open</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar" aria-label="Partner organizations">
+  <div class="marquee-track" id="marqueeTrack">
+    <div class="trust-item"><span class="trust-icon">🏛️</span> ACCA Approved</div>
+    <div class="trust-item"><span class="trust-icon">🌍</span> Globally Recognized</div>
+    <div class="trust-item"><span class="trust-icon">🎓</span> Expert Faculty</div>
+    <div class="trust-item"><span class="trust-icon">📱</span> Online & Offline</div>
+    <div class="trust-item"><span class="trust-icon">🏆</span> Award-Winning Institute</div>
+    <div class="trust-item"><span class="trust-icon">⚡</span> Fast Track Programs</div>
+    <div class="trust-item"><span class="trust-icon">💼</span> Career Support</div>
+    <div class="trust-item"><span class="trust-icon">🔒</span> Secure Payments</div>
+    <div class="trust-item"><span class="trust-icon">📊</span> Analytics Dashboard</div>
+    <div class="trust-item"><span class="trust-icon">🎯</span> Exam Focus</div>
+    <!-- duplicate for seamless loop -->
+    <div class="trust-item"><span class="trust-icon">🏛️</span> ACCA Approved</div>
+    <div class="trust-item"><span class="trust-icon">🌍</span> Globally Recognized</div>
+    <div class="trust-item"><span class="trust-icon">🎓</span> Expert Faculty</div>
+    <div class="trust-item"><span class="trust-icon">📱</span> Online & Offline</div>
+    <div class="trust-item"><span class="trust-icon">🏆</span> Award-Winning Institute</div>
+    <div class="trust-item"><span class="trust-icon">⚡</span> Fast Track Programs</div>
+    <div class="trust-item"><span class="trust-icon">💼</span> Career Support</div>
+    <div class="trust-item"><span class="trust-icon">🔒</span> Secure Payments</div>
+    <div class="trust-item"><span class="trust-icon">📊</span> Analytics Dashboard</div>
+    <div class="trust-item"><span class="trust-icon">🎯</span> Exam Focus</div>
+  </div>
+</div>
+
+<!-- ======================== COURSES ======================== -->
+<section id="courses" class="section" aria-label="ACCA Courses">
+  <div class="container">
+    <div class="courses-header text-center">
+      <div class="section-label">📚 ACCA Papers</div>
+      <h2 class="section-title">All <span class="grad-text">ACCA Papers</span> Covered</h2>
+      <p class="section-subtitle" style="margin:0 auto;">From Applied Knowledge to Strategic Professional — we've got every paper covered with expert tutors and proven study materials.</p>
+    </div>
+
+    <div class="course-levels">
+      <!-- APPLIED KNOWLEDGE -->
+      <div>
+        <div class="course-level-title reveal">
+          <span class="level-badge level-k">Level 1</span>
+          Applied Knowledge
+        </div>
+        <div class="grid-3">
+          <div class="course-card reveal">
+            <div class="course-glow"></div>
+            <div class="course-top">
+              <span class="course-paper">BT / F1</span>
+              <span class="tag">Foundation</span>
+            </div>
+            <div class="course-name">Business and Technology</div>
+            <div class="course-desc">Understand the purpose and types of business organization and the business and its interaction with stakeholders.</div>
+            <div class="course-meta">
+              <div class="course-meta-item"><span class="meta-icon">⏱</span> 3 Months · 2× /week</div>
+              <div class="course-meta-item"><span class="meta-icon">👨‍🏫</span> Dr. Khalid Mahmood</div>
+              <div class="course-meta-item"><span class="meta-icon">📅</span> Starts June 2, 2025</div>
+            </div>
+            <div class="course-footer">
+              <div class="course-fee">£199 <span>/ paper</span></div>
+              <button class="course-enroll" onclick="openModal('registerModal')">Enroll →</button>
+            </div>
+          </div>
+          <div class="course-card reveal anim-delay-1">
+            <div class="course-glow"></div>
+            <div class="course-top">
+              <span class="course-paper">MA / F2</span>
+              <span class="tag">Foundation</span>
+            </div>
+            <div class="course-name">Management Accounting</div>
+            <div class="course-desc">Develop knowledge and understanding of how to prepare and process basic cost and quantitative information.</div>
+            <div class="course-meta">
+              <div class="course-meta-item"><span class="meta-icon">⏱</span> 3 Months · 2× /week</div>
+              <div class="course-meta-item"><span class="meta-icon">👨‍🏫</span> Prof. Amina Hassan</div>
+              <div class="course-meta-item"><span class="meta-icon">📅</span> Starts June 5, 2025</div>
+            </div>
+            <div class="course-footer">
+              <div class="course-fee">£199 <span>/ paper</span></div>
+              <button class="course-enroll" onclick="openModal('registerModal')">Enroll →</button>
+            </div>
+          </div>
+          <div class="course-card reveal anim-delay-2">
+            <div class="course-glow"></div>
+            <div class="course-top">
+              <span class="course-paper">FA / F3</span>
+              <span class="tag">Foundation</span>
+            </div>
+            <div class="course-name">Financial Accounting</div>
+            <div class="course-desc">Develop knowledge and understanding of the underlying principles and concepts relating to financial accounting.</div>
+            <div class="course-meta">
+              <div class="course-meta-item"><span class="meta-icon">⏱</span> 3 Months · 2× /week</div>
+              <div class="course-meta-item"><span class="meta-icon">👨‍🏫</span> Mr. Omar Siddiqui</div>
+              <div class="course-meta-item"><span class="meta-icon">📅</span> Starts June 7, 2025</div>
+            </div>
+            <div class="course-footer">
+              <div class="course-fee">£199 <span>/ paper</span></div>
+              <button class="course-enroll" onclick="openModal('registerModal')">Enroll →</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- APPLIED SKILLS -->
+      <div>
+        <div class="course-level-title reveal">
+          <span class="level-badge level-s">Level 2</span>
+          Applied Skills
+        </div>
+        <div class="grid-3">
+          <div class="course-card reveal">
+            <div class="course-glow"></div>
+            <div class="course-top">
+              <span class="course-paper">LW / F4</span>
+              <span class="tag">Skills</span>
+            </div>
+            <div class="course-name">Corporate and Business Law</div>
+            <div class="course-desc">Develop knowledge and understanding of the general legal framework and of specific legal areas relating to business.</div>
+            <div class="course-meta">
+              <div class="course-meta-item"><span class="meta-icon">⏱</span> 4 Months · 3× /week</div>
+              <div class="course-meta-item"><span class="meta-icon">👨‍🏫</span> Barrister Fatima Ali</div>
+              <div class="course-meta-item"><span class="meta-icon">📅</span> Starts June 10, 2025</div>
+            </div>
+            <div class="course-footer">
+              <div class="course-fee">£299 <span>/ paper</span></div>
+              <button class="course-enroll" onclick="openModal('registerModal')">Enroll →</button>
+            </div>
+          </div>
+          <div class="course-card reveal anim-delay-1">
+            <div class="course-glow"></div>
+            <div class="course-top">
+              <span class="course-paper">PM / F5</span>
+              <span class="tag">Skills</span>
+            </div>
+            <div class="course-name">Performance Management</div>
+            <div class="course-desc">Develop skills expected of a financial manager, in relation to performance management.</div>
+            <div class="course-meta">
+              <div class="course-meta-item"><span class="meta-icon">⏱</span> 4 Months · 3× /week</div>
+              <div class="course-meta-item"><span class="meta-icon">👨‍🏫</span> Prof. Amina Hassan</div>
+              <div class="course-meta-item"><span class="meta-icon">📅</span> Starts June 12, 2025</div>
+            </div>
+            <div class="course-footer">
+              <div class="course-fee">£299 <span>/ paper</span></div>
+              <button class="course-enroll" onclick="openModal('registerModal')">Enroll →</button>
+            </div>
+          </div>
+          <div class="course-card reveal anim-delay-2">
+            <div class="course-glow"></div>
+            <div class="course-top">
+              <span class="course-paper">FR / F7</span>
+              <span class="tag">Popular</span>
+            </div>
+            <div class="course-name">Financial Reporting</div>
+            <div class="course-desc">Develop knowledge and skills in understanding and applying accounting standards and the theoretical framework.</div>
+            <div class="course-meta">
+              <div class="course-meta-item"><span class="meta-icon">⏱</span> 5 Months · 3× /week</div>
+              <div class="course-meta-item"><span class="meta-icon">👨‍🏫</span> Mr. Omar Siddiqui</div>
+              <div class="course-meta-item"><span class="meta-icon">📅</span> Starts June 14, 2025</div>
+            </div>
+            <div class="course-footer">
+              <div class="course-fee">£349 <span>/ paper</span></div>
+              <button class="course-enroll" onclick="openModal('registerModal')">Enroll →</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- STRATEGIC PROFESSIONAL -->
+      <div>
+        <div class="course-level-title reveal">
+          <span class="level-badge level-p">Level 3</span>
+          Strategic Professional
+        </div>
+        <div class="grid-3">
+          <div class="course-card reveal">
+            <div class="course-glow"></div>
+            <div class="course-top">
+              <span class="course-paper">SBL</span>
+              <span class="tag">Essential</span>
+            </div>
+            <div class="course-name">Strategic Business Leader</div>
+            <div class="course-desc">Synthesize technical capabilities and advanced capabilities to produce answers to complex multi-dimensional questions.</div>
+            <div class="course-meta">
+              <div class="course-meta-item"><span class="meta-icon">⏱</span> 6 Months · 4× /week</div>
+              <div class="course-meta-item"><span class="meta-icon">👨‍🏫</span> Dr. Khalid Mahmood</div>
+              <div class="course-meta-item"><span class="meta-icon">📅</span> Starts July 1, 2025</div>
+            </div>
+            <div class="course-footer">
+              <div class="course-fee">£499 <span>/ paper</span></div>
+              <button class="course-enroll" onclick="openModal('registerModal')">Enroll →</button>
+            </div>
+          </div>
+          <div class="course-card reveal anim-delay-1">
+            <div class="course-glow"></div>
+            <div class="course-top">
+              <span class="course-paper">SBR</span>
+              <span class="tag">Essential</span>
+            </div>
+            <div class="course-name">Strategic Business Reporting</div>
+            <div class="course-desc">Apply relevant knowledge, skills and exercise professional judgement in the preparation of financial statements.</div>
+            <div class="course-meta">
+              <div class="course-meta-item"><span class="meta-icon">⏱</span> 6 Months · 4× /week</div>
+              <div class="course-meta-item"><span class="meta-icon">👨‍🏫</span> Prof. Amina Hassan</div>
+              <div class="course-meta-item"><span class="meta-icon">📅</span> Starts July 3, 2025</div>
+            </div>
+            <div class="course-footer">
+              <div class="course-fee">£499 <span>/ paper</span></div>
+              <button class="course-enroll" onclick="openModal('registerModal')">Enroll →</button>
+            </div>
+          </div>
+          <div class="course-card reveal anim-delay-2">
+            <div class="course-glow"></div>
+            <div class="course-top">
+              <span class="course-paper">AFM</span>
+              <span class="tag">Optional</span>
+            </div>
+            <div class="course-name">Advanced Financial Management</div>
+            <div class="course-desc">Apply relevant knowledge, skills and exercise professional judgement in financial strategy and complex decisions.</div>
+            <div class="course-meta">
+              <div class="course-meta-item"><span class="meta-icon">⏱</span> 6 Months · 4× /week</div>
+              <div class="course-meta-item"><span class="meta-icon">👨‍🏫</span> Dr. Khalid Mahmood</div>
+              <div class="course-meta-item"><span class="meta-icon">📅</span> Starts July 5, 2025</div>
+            </div>
+            <div class="course-footer">
+              <div class="course-fee">£499 <span>/ paper</span></div>
+              <button class="course-enroll" onclick="openModal('registerModal')">Enroll →</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== SCHEDULE ======================== -->
+<section id="schedule" class="section" aria-label="Class Schedule">
+  <div class="container">
+    <div class="flex-between mb-48" style="flex-wrap:wrap;gap:20px">
+      <div>
+        <div class="section-label">🗓 Timetable</div>
+        <h2 class="section-title" style="margin-bottom:0">Live <span class="grad-text">Schedule</span></h2>
+      </div>
+      <button class="btn btn-outline" onclick="showToast('📥 Timetable downloaded!','PDF saved to your device.','💾')">📥 Download Timetable</button>
+    </div>
+
+    <div class="schedule-controls reveal">
+      <button class="sched-filter active" onclick="filterSchedule(this,'all')">All Classes</button>
+      <button class="sched-filter" onclick="filterSchedule(this,'live')">🔴 Live</button>
+      <button class="sched-filter" onclick="filterSchedule(this,'upcoming')">📅 Upcoming</button>
+      <button class="sched-filter" onclick="filterSchedule(this,'recorded')">🎬 Recorded</button>
+      <button class="sched-filter" onclick="filterSchedule(this,'weekend')">🏖 Weekend</button>
+    </div>
+
+    <div class="schedule-grid reveal" id="scheduleGrid">
+      <div class="sched-item" data-type="live">
+        <div class="sched-time">09:00 AM</div>
+        <div class="sched-info">
+          <div class="sched-name">Strategic Business Leader (SBL) — Mock Exam Session</div>
+          <div class="sched-sub"><span>👨‍🏫 Dr. Khalid Mahmood</span><span>🎓 Strategic Level</span><span>👥 47 online</span></div>
+        </div>
+        <div class="sched-actions">
+          <span class="badge badge-live">🔴 Live Now</span>
+          <button class="join-btn" onclick="showToast('🎉 Joining class...','Opening virtual classroom','📡')">Join Class</button>
+        </div>
+      </div>
+      <div class="sched-item" data-type="upcoming">
+        <div class="sched-time">11:00 AM</div>
+        <div class="sched-info">
+          <div class="sched-name">Financial Reporting (FR) — Chapter 8: Consolidation</div>
+          <div class="sched-sub"><span>👨‍🏫 Mr. Omar Siddiqui</span><span>🎓 Skills Level</span><span>📚 Batch B</span></div>
+        </div>
+        <div class="sched-actions">
+          <span class="badge badge-upcoming">In 2h</span>
+          <button class="join-btn" style="background:var(--surface2);color:var(--text2);border:1px solid var(--border);box-shadow:none" onclick="showToast('🔔 Reminder set!','We will notify you 10 mins before.','✅')">Set Reminder</button>
+        </div>
+      </div>
+      <div class="sched-item" data-type="upcoming">
+        <div class="sched-time">02:00 PM</div>
+        <div class="sched-info">
+          <div class="sched-name">Management Accounting (MA) — Standard Costing</div>
+          <div class="sched-sub"><span>👨‍🏫 Prof. Amina Hassan</span><span>🎓 Knowledge Level</span><span>📚 Batch A</span></div>
+        </div>
+        <div class="sched-actions">
+          <span class="badge badge-upcoming">In 5h</span>
+          <button class="join-btn" style="background:var(--surface2);color:var(--text2);border:1px solid var(--border);box-shadow:none" onclick="showToast('🔔 Reminder set!','We will notify you 10 mins before.','✅')">Set Reminder</button>
+        </div>
+      </div>
+      <div class="sched-item" data-type="upcoming weekend">
+        <div class="sched-time">10:00 AM<br><small style="color:var(--text3)">Saturday</small></div>
+        <div class="sched-info">
+          <div class="sched-name">Advanced Financial Management (AFM) — Portfolio Theory</div>
+          <div class="sched-sub"><span>👨‍🏫 Dr. Khalid Mahmood</span><span>🎓 Professional Level</span><span>🏖 Weekend Batch</span></div>
+        </div>
+        <div class="sched-actions">
+          <span class="badge badge-upcoming">Tomorrow</span>
+          <button class="rec-btn">📋 Details</button>
+        </div>
+      </div>
+      <div class="sched-item" data-type="recorded">
+        <div class="sched-time">Recorded</div>
+        <div class="sched-info">
+          <div class="sched-name">Business and Technology (BT) — Full Revision Session</div>
+          <div class="sched-sub"><span>👨‍🏫 Dr. Khalid Mahmood</span><span>⏱ 3h 20m</span><span>👁 1,240 views</span></div>
+        </div>
+        <div class="sched-actions">
+          <span class="badge badge-completed">Recorded</span>
+          <button class="rec-btn" onclick="showToast('▶️ Playing recording...','Opening in new window.','🎬')">▶ Watch</button>
+        </div>
+      </div>
+      <div class="sched-item" data-type="recorded">
+        <div class="sched-time">Recorded</div>
+        <div class="sched-info">
+          <div class="sched-name">Performance Management (PM) — Divisional Performance</div>
+          <div class="sched-sub"><span>👨‍🏫 Prof. Amina Hassan</span><span>⏱ 2h 45m</span><span>👁 892 views</span></div>
+        </div>
+        <div class="sched-actions">
+          <span class="badge badge-completed">Recorded</span>
+          <button class="rec-btn" onclick="showToast('▶️ Playing recording...','Opening in new window.','🎬')">▶ Watch</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== DASHBOARD ======================== -->
+<section id="dashboard" class="section" aria-label="Student Dashboard Preview">
+  <div class="container">
+    <div class="text-center mb-48">
+      <div class="section-label">🖥️ Student Portal</div>
+      <h2 class="section-title">Powerful <span class="grad-text">Student Dashboard</span></h2>
+      <p class="section-subtitle" style="margin:0 auto">Track your progress, attend live classes, view results, and manage your entire ACCA journey in one place.</p>
+    </div>
+    <div class="dashboard-wrapper reveal">
+      <div class="dash-sidebar">
+        <div class="dash-logo">CBA</div>
+        <div class="dash-nav-item active">📊 <span>Overview</span></div>
+        <div class="dash-nav-item">📚 <span>My Courses</span></div>
+        <div class="dash-nav-item">✅ <span>Attendance</span></div>
+        <div class="dash-nav-item">🗓 <span>Schedule</span></div>
+        <div class="dash-nav-item">📝 <span>Assignments</span></div>
+        <div class="dash-nav-item">💳 <span>Payments</span></div>
+        <div class="dash-divider"></div>
+        <div class="dash-nav-item">📈 <span>Results</span></div>
+        <div class="dash-nav-item">🔔 <span>Notifications</span></div>
+        <div class="dash-nav-item">⚙️ <span>Settings</span></div>
+      </div>
+      <div class="dash-main">
+        <div class="dash-header">
+          <div>
+            <div class="dash-greeting">Good morning, Sarah 👋</div>
+            <div class="dash-date">Thursday, May 7 · Exam in 47 days</div>
+          </div>
+          <button class="dash-notif" onclick="showToast('🔔 3 new notifications','Check your schedule updates.','📅')">
+            🔔
+            <span class="notif-dot"></span>
+          </button>
+        </div>
+        <div class="dash-widgets">
+          <div class="dash-widget">
+            <div class="widget-label">Attendance</div>
+            <div class="widget-value grad-text">87%</div>
+            <div class="widget-change up">▲ 3% this month</div>
+          </div>
+          <div class="dash-widget">
+            <div class="widget-label">Mock Score</div>
+            <div class="widget-value grad-text">74</div>
+            <div class="widget-change up">▲ +8 from last mock</div>
+          </div>
+          <div class="dash-widget">
+            <div class="widget-label">Papers Completed</div>
+            <div class="widget-value grad-text">4/13</div>
+            <div class="widget-change up">On track ✓</div>
+          </div>
+        </div>
+        <div class="dash-bottom">
+          <div class="dash-panel">
+            <div class="panel-title">Upcoming Classes <a href="#">View all →</a></div>
+            <div class="upcoming-item">
+              <div class="upcoming-dot" style="background:var(--green)"></div>
+              <div class="upcoming-info">
+                <div class="upcoming-name">SBL — Mock Exam</div>
+                <div class="upcoming-time">Today · 09:00 AM · Dr. Khalid</div>
+              </div>
+              <span class="badge badge-live">Live</span>
+            </div>
+            <div class="upcoming-item">
+              <div class="upcoming-dot" style="background:var(--accent3)"></div>
+              <div class="upcoming-info">
+                <div class="upcoming-name">FR — Consolidation Ch.8</div>
+                <div class="upcoming-time">Today · 11:00 AM · Omar</div>
+              </div>
+              <span class="badge badge-upcoming">2h</span>
+            </div>
+            <div class="upcoming-item">
+              <div class="upcoming-dot"></div>
+              <div class="upcoming-info">
+                <div class="upcoming-name">AFM — Portfolio Theory</div>
+                <div class="upcoming-time">Saturday · 10:00 AM</div>
+              </div>
+              <span class="badge badge-upcoming">Sat</span>
+            </div>
+            <div class="upcoming-item">
+              <div class="upcoming-dot"></div>
+              <div class="upcoming-info">
+                <div class="upcoming-name">MA — Standard Costing</div>
+                <div class="upcoming-time">Today · 02:00 PM</div>
+              </div>
+              <span class="badge badge-upcoming">5h</span>
+            </div>
+          </div>
+          <div class="dash-panel">
+            <div class="panel-title">Progress by Paper</div>
+            <div class="donut-wrap">
+              <svg class="donut-svg" width="120" height="120" viewBox="0 0 120 120">
+                <circle cx="60" cy="60" r="50" fill="none" stroke="var(--border)" stroke-width="14"/>
+                <circle cx="60" cy="60" r="50" fill="none" stroke="url(#grad-donut)" stroke-width="14" stroke-dasharray="220 314" stroke-dashoffset="-20" stroke-linecap="round"/>
+                <circle cx="60" cy="60" r="50" fill="none" stroke="var(--accent3)" stroke-width="14" stroke-dasharray="60 314" stroke-dashoffset="-240" stroke-linecap="round" opacity="0.6"/>
+                <defs>
+                  <linearGradient id="grad-donut" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#6c63ff"/>
+                    <stop offset="100%" stop-color="#38bdf8"/>
+                  </linearGradient>
+                </defs>
+                <text x="60" y="56" text-anchor="middle" font-size="18" font-weight="800" fill="var(--text)" font-family="Syne">4</text>
+                <text x="60" y="72" text-anchor="middle" font-size="10" fill="var(--text3)" font-family="DM Sans">/ 13</text>
+              </svg>
+              <div class="donut-legend">
+                <div class="donut-leg-item"><div class="leg-dot" style="background:var(--accent)"></div> Completed (4)</div>
+                <div class="donut-leg-item"><div class="leg-dot" style="background:var(--accent3)"></div> In Progress (3)</div>
+                <div class="donut-leg-item"><div class="leg-dot" style="background:var(--border2)"></div> Remaining (6)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center" style="margin-top:28px">
+      <button class="btn btn-primary" onclick="openModal('loginModal')">Access Student Portal →</button>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== ABOUT ======================== -->
+<section id="about" class="section" aria-label="About CBA">
+  <div class="container">
+    <div class="about-grid">
+      <div class="reveal-left">
+        <div class="section-label">ℹ️ About Us</div>
+        <h2 class="section-title">Why Choose <span class="grad-text">CBA</span>?</h2>
+        <p style="font-size:16px;color:var(--text2);margin-bottom:36px;line-height:1.7">We're not just another coaching center. We're a community of passionate educators and achievers who believe every student deserves the best shot at becoming a globally recognized ACCA professional.</p>
+        <div style="display:flex;flex-direction:column;gap:4px">
+          <div class="about-feature">
+            <div class="about-feat-icon">🎯</div>
+            <div>
+              <div class="about-feat-title">Exam-Focused Curriculum</div>
+              <div class="about-feat-desc">Our syllabus is meticulously aligned with ACCA's latest exam standards with regular mock tests.</div>
+            </div>
+          </div>
+          <div class="about-feature">
+            <div class="about-feat-icon">🧑‍💻</div>
+            <div>
+              <div class="about-feat-title">Hybrid Learning</div>
+              <div class="about-feat-desc">Attend live online classes or in-person sessions — complete flexibility to match your schedule.</div>
+            </div>
+          </div>
+          <div class="about-feature">
+            <div class="about-feat-icon">🤝</div>
+            <div>
+              <div class="about-feat-title">Lifetime Career Support</div>
+              <div class="about-feat-desc">From CV writing to interview prep — our career team stays with you beyond qualification.</div>
+            </div>
+          </div>
+          <div class="about-feature">
+            <div class="about-feat-icon">💡</div>
+            <div>
+              <div class="about-feat-title">AI-Powered Study Tools</div>
+              <div class="about-feat-desc">Adaptive study plans, smart revision flashcards, and personalized progress tracking powered by AI.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal-right">
+        <div class="about-big-card">
+          <div class="acca-circle">CA</div>
+          <h3 style="font-family:var(--font-display);font-size:22px;font-weight:800;text-align:center;margin-bottom:8px">ACCA Approved Center</h3>
+          <p style="text-align:center;color:var(--text2);font-size:14px;margin-bottom:0">Platinum Learning Provider · Registered 2012</p>
+          <div class="about-stats-row">
+            <div class="about-stat">
+              <div class="about-stat-num" data-count="5000">0</div>
+              <div class="about-stat-label">Graduates</div>
+            </div>
+            <div class="about-stat">
+              <div class="about-stat-num" data-count="95" data-suffix="%">0%</div>
+              <div class="about-stat-label">Pass Rate</div>
+            </div>
+            <div class="about-stat">
+              <div class="about-stat-num" data-count="12">0</div>
+              <div class="about-stat-label">Years Active</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== TEACHERS ======================== -->
+<section id="teachers" class="section" aria-label="Our Teachers">
+  <div class="container">
+    <div class="text-center mb-48">
+      <div class="section-label">👨‍🏫 Faculty</div>
+      <h2 class="section-title">Learn from the <span class="grad-text">Best Minds</span></h2>
+      <p class="section-subtitle" style="margin:0 auto">Qualified, experienced, and passionate ACCA professionals dedicated to your success.</p>
+    </div>
+    <div class="teachers-grid">
+      <div class="teacher-card reveal">
+        <div class="teacher-avatar">K</div>
+        <div class="teacher-name">Dr. Khalid Mahmood</div>
+        <div class="teacher-title">Senior ACCA Tutor</div>
+        <div class="teacher-qual">PhD Finance · FCCA · 18 Yrs Exp.</div>
+        <div class="teacher-specialty">
+          <span class="tag">SBL</span> <span class="tag">SBR</span> <span class="tag">AFM</span>
+        </div>
+        <div style="text-align:center;margin-bottom:12px">
+          <div class="teacher-exp">98%</div>
+          <div class="teacher-exp-label">Student Pass Rate</div>
+        </div>
+        <div class="teacher-socials">
+          <div class="social-btn" title="LinkedIn">in</div>
+          <div class="social-btn" title="Twitter">𝕏</div>
+          <div class="social-btn" title="Email">✉</div>
+        </div>
+      </div>
+      <div class="teacher-card reveal anim-delay-1">
+        <div class="teacher-avatar" style="background:var(--grad3)">A</div>
+        <div class="teacher-name">Prof. Amina Hassan</div>
+        <div class="teacher-title">ACCA Performance Specialist</div>
+        <div class="teacher-qual">ACCA · MBA · 14 Yrs Exp.</div>
+        <div class="teacher-specialty">
+          <span class="tag">PM</span> <span class="tag">MA</span> <span class="tag">APM</span>
+        </div>
+        <div style="text-align:center;margin-bottom:12px">
+          <div class="teacher-exp">96%</div>
+          <div class="teacher-exp-label">Student Pass Rate</div>
+        </div>
+        <div class="teacher-socials">
+          <div class="social-btn">in</div>
+          <div class="social-btn">𝕏</div>
+          <div class="social-btn">✉</div>
+        </div>
+      </div>
+      <div class="teacher-card reveal anim-delay-2">
+        <div class="teacher-avatar" style="background:linear-gradient(135deg,#22c55e,#16a34a)">O</div>
+        <div class="teacher-name">Mr. Omar Siddiqui</div>
+        <div class="teacher-title">Financial Reporting Expert</div>
+        <div class="teacher-qual">ACCA · ACA · 11 Yrs Exp.</div>
+        <div class="teacher-specialty">
+          <span class="tag">FR</span> <span class="tag">FA</span> <span class="tag">SBR</span>
+        </div>
+        <div style="text-align:center;margin-bottom:12px">
+          <div class="teacher-exp">94%</div>
+          <div class="teacher-exp-label">Student Pass Rate</div>
+        </div>
+        <div class="teacher-socials">
+          <div class="social-btn">in</div>
+          <div class="social-btn">𝕏</div>
+          <div class="social-btn">✉</div>
+        </div>
+      </div>
+      <div class="teacher-card reveal anim-delay-3">
+        <div class="teacher-avatar" style="background:linear-gradient(135deg,#f59e0b,#ef4444)">F</div>
+        <div class="teacher-name">Barrister Fatima Ali</div>
+        <div class="teacher-title">Corporate Law Specialist</div>
+        <div class="teacher-qual">LLB · ACCA · Bar · 9 Yrs Exp.</div>
+        <div class="teacher-specialty">
+          <span class="tag">LW</span> <span class="tag">BT</span>
+        </div>
+        <div style="text-align:center;margin-bottom:12px">
+          <div class="teacher-exp">97%</div>
+          <div class="teacher-exp-label">Student Pass Rate</div>
+        </div>
+        <div class="teacher-socials">
+          <div class="social-btn">in</div>
+          <div class="social-btn">𝕏</div>
+          <div class="social-btn">✉</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== PRICING ======================== -->
+<section id="pricing" class="section" aria-label="Pricing Plans">
+  <div class="container">
+    <div class="text-center mb-48">
+      <div class="section-label">💰 Pricing</div>
+      <h2 class="section-title">Simple, Transparent <span class="grad-text">Pricing</span></h2>
+      <p class="section-subtitle" style="margin:0 auto 28px">Choose the plan that fits your goals. No hidden fees. Cancel anytime.</p>
+      <div class="pricing-toggle">
+        <span class="toggle-label">Monthly</span>
+        <div class="toggle-switch" id="billingToggle" onclick="toggleBilling()">
+          <div class="toggle-knob"></div>
+        </div>
+        <span class="toggle-label">Annual <span class="save-badge">Save 25%</span></span>
+      </div>
+    </div>
+    <div class="pricing-cards reveal">
+      <div class="price-card">
+        <div class="price-name">Basic</div>
+        <div class="price-desc">Perfect for self-motivated learners starting ACCA</div>
+        <div class="price-amount">
+          <span class="price-currency">£</span>
+          <span class="price-num" id="p1">149</span>
+          <span class="price-per">/month</span>
+        </div>
+        <div class="price-features">
+          <div class="price-feature"><span class="feat-check">✓</span> All Knowledge Level Papers</div>
+          <div class="price-feature"><span class="feat-check">✓</span> Recorded Lectures (24/7)</div>
+          <div class="price-feature"><span class="feat-check">✓</span> Study Materials PDF</div>
+          <div class="price-feature"><span class="feat-check">✓</span> Practice Questions Bank</div>
+          <div class="price-feature"><span class="feat-check feat-x">✗</span> <span style="color:var(--text3)">Live Classes</span></div>
+          <div class="price-feature"><span class="feat-check feat-x">✗</span> <span style="color:var(--text3)">1-on-1 Mentoring</span></div>
+        </div>
+        <button class="price-cta price-cta-outline" onclick="openModal('registerModal')">Get Started</button>
+      </div>
+
+      <div class="price-card popular">
+        <div class="popular-badge">Most Popular</div>
+        <div class="price-name">Premium</div>
+        <div class="price-desc">Best for students who want live guidance & support</div>
+        <div class="price-amount">
+          <span class="price-currency">£</span>
+          <span class="price-num" id="p2">299</span>
+          <span class="price-per">/month</span>
+        </div>
+        <div class="price-features">
+          <div class="price-feature"><span class="feat-check">✓</span> All ACCA Papers (Full)</div>
+          <div class="price-feature"><span class="feat-check">✓</span> Live Interactive Classes</div>
+          <div class="price-feature"><span class="feat-check">✓</span> Recorded Lectures (24/7)</div>
+          <div class="price-feature"><span class="feat-check">✓</span> Mock Exams & Feedback</div>
+          <div class="price-feature"><span class="feat-check">✓</span> Monthly 1-on-1 Session</div>
+          <div class="price-feature"><span class="feat-check feat-x">✗</span> <span style="color:var(--text3)">Dedicated Tutor</span></div>
+        </div>
+        <button class="price-cta price-cta-primary" onclick="openModal('registerModal')">Enroll Now</button>
+      </div>
+
+      <div class="price-card">
+        <div class="price-name">Fast Track</div>
+        <div class="price-desc">Intensive program to qualify in the shortest time</div>
+        <div class="price-amount">
+          <span class="price-currency">£</span>
+          <span class="price-num" id="p3">499</span>
+          <span class="price-per">/month</span>
+        </div>
+        <div class="price-features">
+          <div class="price-feature"><span class="feat-check">✓</span> Everything in Premium</div>
+          <div class="price-feature"><span class="feat-check">✓</span> Dedicated Personal Tutor</div>
+          <div class="price-feature"><span class="feat-check">✓</span> Weekly 1-on-1 Sessions</div>
+          <div class="price-feature"><span class="feat-check">✓</span> Exam Strategy Coaching</div>
+          <div class="price-feature"><span class="feat-check">✓</span> Priority Support (24/7)</div>
+          <div class="price-feature"><span class="feat-check">✓</span> Career Placement Support</div>
+        </div>
+        <button class="price-cta price-cta-outline" onclick="openModal('registerModal')">Go Fast Track</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== TESTIMONIALS ======================== -->
+<section id="testimonials" class="section" aria-label="Student Testimonials">
+  <div class="container">
+    <div class="text-center mb-48">
+      <div class="section-label">⭐ Success Stories</div>
+      <h2 class="section-title">What Our <span class="grad-text">Students Say</span></h2>
+    </div>
+    <div class="testi-slider">
+      <div class="testi-track" id="testiTrack">
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <div class="testi-text">"CBA transformed my approach to ACCA completely. The SBL classes with Dr. Khalid are absolutely world-class. I cleared all my papers in the first attempt — something I never thought possible."</div>
+          <div class="testi-author">
+            <div class="testi-avatar">Z</div>
+            <div>
+              <div class="testi-name">Zainab Malik</div>
+              <div class="testi-role">ACCA Graduate · Big 4 Accountant</div>
+              <div class="testi-result">✅ All papers first attempt</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <div class="testi-text">"The online portal is incredibly well designed. I could track my progress, watch recordings, and attend live classes all in one place. The mock exam feedback was invaluable for my AFM paper."</div>
+          <div class="testi-author">
+            <div class="testi-avatar" style="background:var(--grad3)">R</div>
+            <div>
+              <div class="testi-name">Raza Ahmed</div>
+              <div class="testi-role">Finance Manager · ACCA Member</div>
+              <div class="testi-result">✅ Qualified in 2.5 years</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <div class="testi-text">"Prof. Amina's PM classes are phenomenal. Her way of breaking down complex variance analysis into simple concepts is unmatched. The weekend batch worked perfectly with my job schedule."</div>
+          <div class="testi-author">
+            <div class="testi-avatar" style="background:linear-gradient(135deg,#22c55e,#0d9488)">N</div>
+            <div>
+              <div class="testi-name">Nadia Hussain</div>
+              <div class="testi-role">CFO · ACCA FCCA</div>
+              <div class="testi-result">✅ Distinction in PM & MA</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <div class="testi-text">"I attempted FR three times before joining CBA. After just one session with Omar Sir, everything clicked. Passed with 68% on my very next attempt. Cannot thank them enough."</div>
+          <div class="testi-author">
+            <div class="testi-avatar" style="background:linear-gradient(135deg,#8b5cf6,#6c63ff)">H</div>
+            <div>
+              <div class="testi-name">Hassan Tariq</div>
+              <div class="testi-role">Senior Auditor · Big 4</div>
+              <div class="testi-result">✅ Cleared FR on 4th attempt</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <div class="testi-text">"The Fast Track program is worth every penny. My dedicated tutor, the intensive schedule, and the exam strategy sessions gave me the confidence to pass SBL and SBR in the same sitting."</div>
+          <div class="testi-author">
+            <div class="testi-avatar" style="background:linear-gradient(135deg,#f59e0b,#f97316)">S</div>
+            <div>
+              <div class="testi-name">Sara Khan</div>
+              <div class="testi-role">Financial Controller</div>
+              <div class="testi-result">✅ SBL + SBR in same sitting</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slider-controls">
+      <button class="slider-btn" onclick="slideTestimonials(-1)" aria-label="Previous">←</button>
+      <div class="slider-dots" id="sliderDots">
+        <div class="slider-dot active"></div>
+        <div class="slider-dot"></div>
+        <div class="slider-dot"></div>
+      </div>
+      <button class="slider-btn" onclick="slideTestimonials(1)" aria-label="Next">→</button>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== CONTACT ======================== -->
+<section id="contact" class="section" aria-label="Contact Us">
+  <div class="container">
+    <div class="text-center mb-48">
+      <div class="section-label">📞 Get in Touch</div>
+      <h2 class="section-title">We'd Love to <span class="grad-text">Hear From You</span></h2>
+    </div>
+    <div class="contact-grid reveal">
+      <div class="contact-info">
+        <div class="contact-item">
+          <div class="contact-icon-wrap">📍</div>
+          <div>
+            <div class="contact-label">Office Address</div>
+            <div class="contact-value">Kart-e-Char station, Next to Sakha Brothers Car Dealership, House #19.
+𝐊𝐚𝐫𝐭-𝐞-𝐍𝐚𝐰_𝐁𝐫𝐚𝐧𝐜𝐡: Kart-e-Naw First Street, Opposite Talaie Township, Edrees Tower, 3rd Floor</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon-wrap">📞</div>
+          <div>
+            <div class="contact-label">Phone / WhatsApp</div>
+            <div class="contact-value">+93 74 870 6351</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon-wrap">✉️</div>
+          <div>
+            <div class="contact-label">Email</div>
+            <div class="contact-value">info@cba.edu.af</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon-wrap">⏰</div>
+          <div>
+            <div class="contact-label">Office Hours</div>
+            <div class="contact-value">Mon–Sat: 9AM–8PM · Sun: 10AM–5PM</div>
+          </div>
+        </div>
+        <a href="#" class="btn btn-primary" style="width:fit-content" onclick="showToast('💬 Opening WhatsApp...','Starting chat with our advisor.','✅')">
+          💬 Chat on WhatsApp
+        </a>
+        <div class="map-placeholder">
+          <div style="text-align:center">
+            <div class="map-pin">📍</div>
+            <div style="margin-top:8px;font-weight:600">CBA Education Center</div>
+            <div style="font-size:12px;color:var(--text3)">42 Finchley Road, London</div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form">
+        <h3 style="font-family:var(--font-display);font-size:22px;font-weight:800;margin-bottom:24px">Send a Message</h3>
+        <div class="form-row">
+          <div class="form-group"><label class="form-label">First Name</label><input class="form-input" placeholder="John" type="text"/></div>
+          <div class="form-group"><label class="form-label">Last Name</label><input class="form-input" placeholder="Smith" type="text"/></div>
+        </div>
+        <div class="form-group"><label class="form-label">Email</label><input class="form-input" placeholder="john@email.com" type="email"/></div>
+        <div class="form-group"><label class="form-label">Phone</label><input class="form-input" placeholder="+44 7XXX XXXXXX" type="tel"/></div>
+        <div class="form-group">
+          <label class="form-label">I'm interested in</label>
+          <select class="form-select form-input">
+            <option>Select a paper/program</option>
+            <option>Applied Knowledge (BT, MA, FA)</option>
+            <option>Applied Skills (LW, PM, TX, FR, AA, FM)</option>
+            <option>Strategic Professional (SBL, SBR + Options)</option>
+            <option>Full ACCA Program</option>
+            <option>Fast Track Package</option>
+          </select>
+        </div>
+        <div class="form-group"><label class="form-label">Message</label><textarea class="form-textarea" placeholder="Tell us about your ACCA journey and how we can help..."></textarea></div>
+        <button class="btn btn-primary" style="width:100%;justify-content:center" onclick="showToast('✅ Message sent!','We will get back to you within 24 hours.','📩')">Send Message →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== FOOTER ======================== -->
+<footer aria-label="Site footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">CBA</div>
+        <div class="footer-about">Premier ACCA Education Center with a proven track record of success. Join 5,000+ graduates who've transformed their careers with our expert coaching.</div>
+        <div class="footer-socials">
+          <a class="footer-social" href="#" aria-label="LinkedIn" title="LinkedIn">in</a>
+          <a class="footer-social" href="#" aria-label="Twitter" title="Twitter">𝕏</a>
+          <a class="footer-social" href="#" aria-label="Facebook" title="Facebook">f</a>
+          <a class="footer-social" href="#" aria-label="Instagram" title="Instagram">📷</a>
+          <a class="footer-social" href="#" aria-label="YouTube" title="YouTube">▶</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Quick Links</div>
+        <div class="footer-links">
+          <a href="#hero" class="footer-link">Home</a>
+          <a href="#courses" class="footer-link">ACCA Papers</a>
+          <a href="#schedule" class="footer-link">Schedule</a>
+          <a href="#teachers" class="footer-link">Our Teachers</a>
+          <a href="#pricing" class="footer-link">Pricing</a>
+          <a href="#contact" class="footer-link">Contact</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">ACCA Papers</div>
+        <div class="footer-links">
+          <a href="#courses" class="footer-link">BT / F1</a>
+          <a href="#courses" class="footer-link">MA / F2</a>
+          <a href="#courses" class="footer-link">FA / F3</a>
+          <a href="#courses" class="footer-link">PM / F5</a>
+          <a href="#courses" class="footer-link">FR / F7</a>
+          <a href="#courses" class="footer-link">SBL / SBR</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Newsletter</div>
+        <p style="font-size:14px;color:var(--text2);margin-bottom:4px">Get exam tips, study guides & schedule updates.</p>
+        <div class="newsletter-form">
+          <input class="newsletter-input" placeholder="Your email..." type="email"/>
+          <button class="newsletter-btn" onclick="showToast('✉️ Subscribed!','You\'ll receive weekly ACCA tips.','🎉')">→</button>
+        </div>
+        <div class="footer-links" style="margin-top:20px">
+          <a href="#" class="footer-link">Privacy Policy</a>
+          <a href="#" class="footer-link">Terms of Service</a>
+          <a href="#" class="footer-link">Refund Policy</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 CBA Education Center Ltd. All rights reserved.</span>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms</a>
+        <a href="#">Cookies</a>
+        <a href="#">Sitemap</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ======================== FLOATING BUTTONS ======================== -->
+<div class="float-actions">
+  <div class="fab fab-chat" onclick="toggleChatbot()" title="AI Assistant">
+    🤖
+    <span class="fab-tooltip">AI Study Assistant</span>
+  </div>
+  <div class="fab fab-wa" onclick="showToast('💬 Opening WhatsApp...','Connecting to advisor.','✅')" title="WhatsApp">
+    💬
+    <span class="fab-tooltip">WhatsApp Chat</span>
+  </div>
+  <div class="fab fab-main" onclick="openModal('registerModal')" title="Enroll Now">
+    🎓
+    <span class="fab-tooltip">Enroll Now</span>
+  </div>
+</div>
+
+<!-- Back to top -->
+<button id="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top" title="Back to top">↑</button>
+
+<!-- ======================== CHATBOT ======================== -->
+<div class="chatbot-widget" id="chatbot" role="dialog" aria-label="AI Study Assistant">
+  <div class="chat-header">
+    <div class="chat-avatar">🤖</div>
+    <div>
+      <div class="chat-name">CBA Assistant</div>
+      <div class="chat-status"><span class="chat-status-dot"></span>Online · Powered by AI</div>
+    </div>
+    <span class="chat-close" onclick="toggleChatbot()">✕</span>
+  </div>
+  <div class="chat-messages" id="chatMessages">
+    <div class="chat-msg chat-msg-bot">
+      <div class="chat-bubble">👋 Hello! I'm your ACCA Study Assistant. How can I help you today?</div>
+    </div>
+    <div class="chat-msg chat-msg-bot">
+      <div class="chat-bubble">I can help with course info, study plans, exam tips, or any ACCA questions!</div>
+    </div>
+  </div>
+  <div class="chat-quick">
+    <button class="quick-btn" onclick="sendQuickMsg('What papers should I start with?')">📚 Where to start?</button>
+    <button class="quick-btn" onclick="sendQuickMsg('What is your pass rate?')">📊 Pass rates</button>
+    <button class="quick-btn" onclick="sendQuickMsg('Tell me about pricing plans.')">💰 Pricing</button>
+    <button class="quick-btn" onclick="sendQuickMsg('How do I enroll?')">🎓 Enroll</button>
+  </div>
+  <div class="chat-input-row">
+    <input class="chat-input" id="chatInput" placeholder="Ask anything about ACCA..." onkeydown="if(event.key==='Enter')sendChatMsg()"/>
+    <button class="chat-send" onclick="sendChatMsg()">→</button>
+  </div>
+</div>
+
+<!-- ======================== SEARCH OVERLAY ======================== -->
+<div class="search-overlay hidden" id="searchOverlay" onclick="if(event.target===this)closeSearch()" role="search">
+  <div class="search-box">
+    <div class="search-inner">
+      <span class="search-icon">🔍</span>
+      <input class="search-field" id="searchField" placeholder="Search papers, teachers, resources..." oninput="updateSearch(this.value)" autofocus/>
+      <span class="search-kbd" onclick="closeSearch()">ESC</span>
+    </div>
+    <div class="search-results" id="searchResults">
+      <div class="search-result-item" onclick="document.getElementById('courses').scrollIntoView({behavior:'smooth'});closeSearch()">
+        <div class="search-result-icon">📚</div>
+        <div><div class="search-result-name">All ACCA Courses</div><div class="search-result-type">Courses</div></div>
+      </div>
+      <div class="search-result-item" onclick="document.getElementById('schedule').scrollIntoView({behavior:'smooth'});closeSearch()">
+        <div class="search-result-icon">🗓</div>
+        <div><div class="search-result-name">Class Schedule</div><div class="search-result-type">Schedule</div></div>
+      </div>
+      <div class="search-result-item" onclick="document.getElementById('pricing').scrollIntoView({behavior:'smooth'});closeSearch()">
+        <div class="search-result-icon">💰</div>
+        <div><div class="search-result-name">Pricing Plans</div><div class="search-result-type">Pricing</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ======================== LOGIN MODAL ======================== -->
+<div class="page-overlay hidden" id="loginModal" onclick="if(event.target===this)closeModal('loginModal')">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('loginModal')">✕</button>
+    <div class="modal-logo">CBA</div>
+    <div class="modal-title">Welcome back 👋</div>
+    <div class="modal-sub">Sign in to your student portal</div>
+    <div class="social-login">
+      <button class="social-login-btn" onclick="showToast('🔐 Google sign in...','Redirecting securely.','✅')">🌐 Google</button>
+      <button class="social-login-btn" onclick="showToast('🔐 LinkedIn sign in...','Redirecting securely.','✅')">in LinkedIn</button>
+    </div>
+    <div class="divider"><div class="divider-line"></div><span>or sign in with email</span><div class="divider-line"></div></div>
+    <div class="form-group-modal form-group">
+      <label class="form-label">Email Address</label>
+      <input class="form-input" type="email" placeholder="you@email.com" id="loginEmail"/>
+    </div>
+    <div class="form-group-modal form-group">
+      <label class="form-label">Password</label>
+      <input class="form-input" type="password" placeholder="••••••••" id="loginPass"/>
+    </div>
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:24px">
+      <label class="form-check">
+        <input type="checkbox"/> Remember me
+      </label>
+      <a href="#" style="font-size:13px;color:var(--accent2)">Forgot password?</a>
+    </div>
+    <button class="btn btn-primary" style="width:100%;justify-content:center" onclick="handleLogin()">Sign In →</button>
+    <div class="modal-footer-text">Don't have an account? <a onclick="closeModal('loginModal');openModal('signupModal')">Sign up</a></div>
+  </div>
+</div>
+
+<!-- ======================== SIGNUP MODAL ======================== -->
+<div class="page-overlay hidden" id="signupModal" onclick="if(event.target===this)closeModal('signupModal')">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('signupModal')">✕</button>
+    <div class="modal-logo">CBA</div>
+    <div class="modal-title">Join CBA 🎓</div>
+    <div class="modal-sub">Create your free student account</div>
+    <div class="form-row">
+      <div class="form-group"><label class="form-label">First Name</label><input class="form-input" placeholder="John" type="text"/></div>
+      <div class="form-group"><label class="form-label">Last Name</label><input class="form-input" placeholder="Smith" type="text"/></div>
+    </div>
+    <div class="form-group"><label class="form-label">Email</label><input class="form-input" type="email" placeholder="you@email.com"/></div>
+    <div class="form-group"><label class="form-label">Phone / WhatsApp</label><input class="form-input" type="tel" placeholder="+44 7XXX XXXXXX"/></div>
+    <div class="form-row">
+      <div class="form-group"><label class="form-label">Password</label><input class="form-input" type="password" placeholder="••••••••"/></div>
+      <div class="form-group"><label class="form-label">Confirm Password</label><input class="form-input" type="password" placeholder="••••••••"/></div>
+    </div>
+    <div class="form-row">
+      <div class="form-group">
+        <label class="form-label">Country</label>
+        <select class="form-select form-input">
+          <option>United Kingdom</option>
+          <option>Pakistan</option>
+          <option>Nigeria</option>
+          <option>UAE</option>
+          <option>Malaysia</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Student Type</label>
+        <select class="form-select form-input">
+          <option>New Student</option>
+          <option>Transfer Student</option>
+          <option>Existing ACCA Member</option>
+        </select>
+      </div>
+    </div>
+    <button class="btn btn-primary" style="width:100%;justify-content:center" onclick="handleSignup()">Create Account →</button>
+    <div class="modal-footer-text">Already have an account? <a onclick="closeModal('signupModal');openModal('loginModal')">Log in</a></div>
+  </div>
+</div>
+
+<!-- ======================== REGISTER (MULTI-STEP) MODAL ======================== -->
+<div class="page-overlay hidden" id="registerModal" onclick="if(event.target===this)closeModal('registerModal')">
+  <div class="modal modal-wide">
+    <button class="modal-close" onclick="closeModal('registerModal')">✕</button>
+    <div class="modal-logo">CBA</div>
+    <div class="modal-title">Student Registration</div>
+    <div class="modal-sub">Complete your application in 4 simple steps</div>
+
+    <div class="step-indicator" id="stepIndicator">
+      <div class="step-indicator-fill" id="stepFill" style="width:0%"></div>
+      <div class="step-item active" data-step="1"><div class="step-circle">1</div><div class="step-label">Personal</div></div>
+      <div class="step-item" data-step="2"><div class="step-circle">2</div><div class="step-label">Education</div></div>
+      <div class="step-item" data-step="3"><div class="step-circle">3</div><div class="step-label">Papers</div></div>
+      <div class="step-item" data-step="4"><div class="step-circle">4</div><div class="step-label">Payment</div></div>
+    </div>
+
+    <div class="step-content" id="stepContent">
+      <!-- Content populated by JS -->
+    </div>
+
+    <div class="step-nav">
+      <button class="btn btn-outline" id="stepPrev" onclick="changeStep(-1)" style="display:none">← Previous</button>
+      <button class="btn btn-primary" id="stepNext" onclick="changeStep(1)" style="margin-left:auto">Next Step →</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// =============================================
+// LOADING
+// =============================================
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    const ls = document.getElementById('loading-screen');
+    ls.classList.add('fade-out');
+    setTimeout(() => ls.style.display = 'none', 500);
+    setTimeout(() => showToast('👋 Welcome to CBA!', 'Explore our courses and enroll today.', '🎓'), 800);
+  }, 1600);
+});
+
+// =============================================
+// NAVBAR SCROLL
+// =============================================
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  navbar.classList.toggle('scrolled', window.scrollY > 40);
+  document.getElementById('back-top').classList.toggle('visible', window.scrollY > 400);
+  // active nav link
+  const sections = ['hero','courses','schedule','teachers','pricing','about','contact'];
+  let cur = '';
+  sections.forEach(id => {
+    const el = document.getElementById(id);
+    if (el && window.scrollY >= el.offsetTop - 120) cur = id;
+  });
+  document.querySelectorAll('.nav-link').forEach(a => {
+    a.classList.toggle('active', a.getAttribute('href') === '#'+cur);
+  });
+});
+
+// =============================================
+// HAMBURGER MENU
+// =============================================
+const ham = document.getElementById('hamburger');
+const mob = document.getElementById('mobile-menu');
+ham.addEventListener('click', () => {
+  ham.classList.toggle('open');
+  mob.classList.toggle('open');
+  ham.setAttribute('aria-expanded', ham.classList.contains('open'));
+});
+function closeMobileMenu() {
+  ham.classList.remove('open');
+  mob.classList.remove('open');
+  ham.setAttribute('aria-expanded', 'false');
+}
+
+// =============================================
+// THEME TOGGLE
+// =============================================
+const themeBtn = document.getElementById('themeToggle');
+let isDark = true;
+themeBtn.addEventListener('click', () => {
+  isDark = !isDark;
+  document.documentElement.setAttribute('data-theme', isDark ? 'dark' : 'light');
+  themeBtn.textContent = isDark ? '🌙' : '☀️';
+});
+
+// =============================================
+// COUNTER ANIMATION
+// =============================================
+function animateCount(el) {
+  const target = parseInt(el.dataset.count);
+  const suffix = el.dataset.suffix || '';
+  const duration = 1800;
+  const start = performance.now();
+  function step(now) {
+    const progress = Math.min((now - start) / duration, 1);
+    const ease = 1 - Math.pow(1 - progress, 3);
+    el.textContent = Math.floor(ease * target).toLocaleString() + suffix;
+    if (progress < 1) requestAnimationFrame(step);
+    else el.textContent = target.toLocaleString() + suffix;
+  }
+  requestAnimationFrame(step);
+}
+
+// =============================================
+// SCROLL REVEAL
+// =============================================
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+      // counters
+      e.target.querySelectorAll('[data-count]').forEach(animateCount);
+      if (e.target.dataset.count) animateCount(e.target);
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => observer.observe(el));
+document.querySelectorAll('[data-count]').forEach(el => observer.observe(el));
+
+// =============================================
+// MODAL
+// =============================================
+function openModal(id) {
+  const m = document.getElementById(id);
+  m.classList.remove('hidden');
+  document.body.style.overflow = 'hidden';
+  if (id === 'registerModal') initStepForm();
+}
+function closeModal(id) {
+  document.getElementById(id).classList.add('hidden');
+  document.body.style.overflow = '';
+}
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') {
+    document.querySelectorAll('.page-overlay:not(.hidden)').forEach(m => m.classList.add('hidden'));
+    document.body.style.overflow = '';
+    closeSearch();
+  }
+});
+
+// =============================================
+// TOAST NOTIFICATION
+// =============================================
+function showToast(title, msg, icon = '✅') {
+  const c = document.getElementById('toastContainer');
+  const t = document.createElement('div');
+  t.className = 'toast';
+  t.innerHTML = `<span class="toast-icon">${icon}</span><div class="toast-body"><div class="toast-title">${title}</div><div class="toast-msg">${msg}</div></div><span class="toast-close" onclick="removeToast(this.parentElement)">✕</span>`;
+  c.appendChild(t);
+  setTimeout(() => removeToast(t), 4000);
+}
+function removeToast(el) {
+  el.classList.add('removing');
+  setTimeout(() => el.remove(), 300);
+}
+
+// =============================================
+// SEARCH
+// =============================================
+const searchItems = [
+  {icon:'📚',name:'Business and Technology (BT)',type:'Paper'},
+  {icon:'📊',name:'Management Accounting (MA)',type:'Paper'},
+  {icon:'💹',name:'Financial Accounting (FA)',type:'Paper'},
+  {icon:'⚖️',name:'Corporate and Business Law (LW)',type:'Paper'},
+  {icon:'🎯',name:'Performance Management (PM)',type:'Paper'},
+  {icon:'📑',name:'Financial Reporting (FR)',type:'Paper'},
+  {icon:'🏆',name:'Strategic Business Leader (SBL)',type:'Paper'},
+  {icon:'📋',name:'Strategic Business Reporting (SBR)',type:'Paper'},
+  {icon:'💰',name:'Advanced Financial Management (AFM)',type:'Paper'},
+  {icon:'👨‍🏫',name:'Dr. Khalid Mahmood',type:'Teacher'},
+  {icon:'👩‍🏫',name:'Prof. Amina Hassan',type:'Teacher'},
+  {icon:'👨‍🏫',name:'Mr. Omar Siddiqui',type:'Teacher'},
+  {icon:'💳',name:'Pricing Plans',type:'Page'},
+  {icon:'🗓',name:'Class Schedule',type:'Page'},
+  {icon:'📞',name:'Contact Us',type:'Page'},
+];
+document.getElementById('searchToggle').addEventListener('click', openSearch);
+function openSearch() {
+  document.getElementById('searchOverlay').classList.remove('hidden');
+  setTimeout(() => document.getElementById('searchField').focus(), 100);
+}
+function closeSearch() { document.getElementById('searchOverlay').classList.add('hidden'); }
+function updateSearch(q) {
+  const res = document.getElementById('searchResults');
+  const filtered = q.length < 2 ? searchItems.slice(0,5) : searchItems.filter(i => i.name.toLowerCase().includes(q.toLowerCase()));
+  res.innerHTML = filtered.length ? filtered.map(i => `<div class="search-result-item" onclick="closeSearch();showToast('🔍 Navigating...','Going to ${i.name}','✅')"><div class="search-result-icon">${i.icon}</div><div><div class="search-result-name">${i.name}</div><div class="search-result-type">${i.type}</div></div></div>`).join('') : '<div style="padding:20px;text-align:center;color:var(--text3)">No results found</div>';
+}
+
+// =============================================
+// CHATBOT
+// =============================================
+let chatOpen = false;
+function toggleChatbot() {
+  chatOpen = !chatOpen;
+  document.getElementById('chatbot').classList.toggle('open', chatOpen);
+}
+const botAnswers = {
+  'start': 'For beginners, we recommend starting with the Applied Knowledge papers: Business and Technology (BT), Management Accounting (MA), and Financial Accounting (FA). These build your foundation! 📚',
+  'pass': 'Our overall pass rate is 95%, which is significantly above the global ACCA average of 47%. Paper-specific rates are even higher with our expert faculty! 🏆',
+  'pric': 'We have 3 plans: Basic (£149/mo), Premium (£299/mo), and Fast Track (£499/mo). Annual billing saves you 25%! Check the Pricing section for details. 💰',
+  'enrol': 'You can enroll by clicking the "Enroll Now" button on any course card, or click the floating 🎓 button. Our team will contact you within 24 hours! ✅',
+  'schedul': 'Classes run Monday–Saturday. Live sessions are morning and afternoon. All classes are recorded so you never miss a lecture. Check the Schedule section! 🗓',
+};
+function sendChatMsg() {
+  const input = document.getElementById('chatInput');
+  const msg = input.value.trim();
+  if (!msg) return;
+  addChatMsg(msg, 'user');
+  input.value = '';
+  showTyping();
+  setTimeout(() => {
+    removeTyping();
+    const key = Object.keys(botAnswers).find(k => msg.toLowerCase().includes(k)) || null;
+    const reply = key ? botAnswers[key] : "That's a great question! Our academic counselors would be happy to help. You can reach us on WhatsApp or email info@cba.edu.af 😊";
+    addChatMsg(reply, 'bot');
+  }, 1200);
+}
+function sendQuickMsg(msg) {
+  document.getElementById('chatInput').value = msg;
+  sendChatMsg();
+}
+function addChatMsg(text, who) {
+  const msgs = document.getElementById('chatMessages');
+  const div = document.createElement('div');
+  div.className = `chat-msg chat-msg-${who}`;
+  div.innerHTML = `<div class="chat-bubble">${text}</div>`;
+  msgs.appendChild(div);
+  msgs.scrollTop = msgs.scrollHeight;
+}
+let typingEl = null;
+function showTyping() {
+  const msgs = document.getElementById('chatMessages');
+  typingEl = document.createElement('div');
+  typingEl.className = 'chat-msg chat-msg-bot';
+  typingEl.innerHTML = '<div class="chat-typing"><div class="typing-dot"></div><div class="typing-dot"></div><div class="typing-dot"></div></div>';
+  msgs.appendChild(typingEl);
+  msgs.scrollTop = msgs.scrollHeight;
+}
+function removeTyping() { if (typingEl) { typingEl.remove(); typingEl = null; } }
+
+// =============================================
+// BILLING TOGGLE
+// =============================================
+let isAnnual = false;
+const prices = [[149,299,499],[112,224,374]];
+function toggleBilling() {
+  isAnnual = !isAnnual;
+  document.getElementById('billingToggle').classList.toggle('on', isAnnual);
+  const p = prices[isAnnual ? 1 : 0];
+  ['p1','p2','p3'].forEach((id,i) => document.getElementById(id).textContent = p[i]);
+}
+
+// =============================================
+// TESTIMONIALS SLIDER
+// =============================================
+let testiPos = 0;
+const testiTotal = 3;
+function slideTestimonials(dir) {
+  testiPos = (testiPos + dir + testiTotal) % testiTotal;
+  const track = document.getElementById('testiTrack');
+  const cardW = track.children[0].offsetWidth + 24;
+  track.style.transform = `translateX(-${testiPos * cardW}px)`;
+  document.querySelectorAll('.slider-dot').forEach((d,i) => d.classList.toggle('active', i === testiPos));
+}
+// Auto-slide
+setInterval(() => slideTestimonials(1), 5000);
+
+// =============================================
+// SCHEDULE FILTER
+// =============================================
+function filterSchedule(btn, type) {
+  document.querySelectorAll('.sched-filter').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.sched-item').forEach(item => {
+    if (type === 'all') { item.style.display = ''; return; }
+    const t = item.dataset.type || '';
+    item.style.display = t.includes(type) ? '' : 'none';
+  });
+}
+
+// =============================================
+// AUTH HANDLERS
+// =============================================
+function handleLogin() {
+  const email = document.getElementById('loginEmail').value;
+  const pass = document.getElementById('loginPass').value;
+  if (!email || !pass) { showToast('⚠️ Please fill all fields', 'Email and password required.', '❌'); return; }
+  showToast('🎉 Login successful!', 'Welcome back to CBA.', '✅');
+  closeModal('loginModal');
+}
+function handleSignup() {
+  showToast('🎉 Account created!', 'Welcome to CBA! Check your email.', '✅');
+  closeModal('signupModal');
+}
+
+// =============================================
+// MULTI-STEP FORM
+// =============================================
+let currentStep = 1;
+const totalSteps = 4;
+const stepContents = [
+  // Step 1 - Personal
+  `<h3 style="font-weight:700;margin-bottom:20px">Personal Information</h3>
+  <div class="form-row">
+    <div class="form-group"><label class="form-label">First Name *</label><input class="form-input" placeholder="John" type="text" required/></div>
+    <div class="form-group"><label class="form-label">Last Name *</label><input class="form-input" placeholder="Smith" type="text" required/></div>
+  </div>
+  <div class="form-group"><label class="form-label">Email *</label><input class="form-input" type="email" placeholder="john@email.com" required/></div>
+  <div class="form-row">
+    <div class="form-group"><label class="form-label">Phone *</label><input class="form-input" type="tel" placeholder="+44 7XXX XXXXXX" required/></div>
+    <div class="form-group"><label class="form-label">Date of Birth</label><input class="form-input" type="date"/></div>
+  </div>
+  <div class="form-row">
+    <div class="form-group"><label class="form-label">Country *</label><select class="form-select form-input"><option>United Kingdom</option><option>Pakistan</option><option>Nigeria</option><option>UAE</option><option>Malaysia</option></select></div>
+    <div class="form-group"><label class="form-label">Gender</label><select class="form-select form-input"><option>Prefer not to say</option><option>Male</option><option>Female</option></select></div>
+  </div>`,
+
+  // Step 2 - Education
+  `<h3 style="font-weight:700;margin-bottom:20px">Educational Background</h3>
+  <div class="form-group"><label class="form-label">Highest Qualification</label><select class="form-select form-input"><option>A-Levels / equivalent</option><option>Bachelor's Degree</option><option>Master's Degree</option><option>Other</option></select></div>
+  <div class="form-row">
+    <div class="form-group"><label class="form-label">Field of Study</label><input class="form-input" placeholder="e.g. Commerce, Finance"/></div>
+    <div class="form-group"><label class="form-label">Year Completed</label><input class="form-input" type="number" placeholder="2022"/></div>
+  </div>
+  <div class="form-group"><label class="form-label">ACCA Registration Number (if existing)</label><input class="form-input" placeholder="Leave blank if new student"/></div>
+  <div class="form-group"><label class="form-label">Papers Already Exempted</label><select class="form-select form-input"><option>None - Starting fresh</option><option>BT exemption</option><option>MA exemption</option><option>FA exemption</option><option>Multiple exemptions</option></select></div>
+  <div class="form-group"><label class="form-label">Work Experience</label><select class="form-select form-input"><option>No experience</option><option>1-2 years</option><option>2-5 years</option><option>5+ years</option></select></div>`,
+
+  // Step 3 - Papers
+  `<h3 style="font-weight:700;margin-bottom:20px">Select ACCA Papers & Batch</h3>
+  <div class="form-group"><label class="form-label">Which papers do you want to enroll in?</label>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:8px">
+    ${['BT - Business & Technology','MA - Management Accounting','FA - Financial Accounting','LW - Corporate Law','PM - Performance Management','TX - Taxation','FR - Financial Reporting','AA - Audit & Assurance','FM - Financial Management','SBL - Strategic Business Leader','SBR - Strategic Business Reporting','AFM - Advanced Fin. Management'].map(p => `<label style="display:flex;align-items:center;gap:8px;font-size:13px;padding:10px;border-radius:8px;border:1px solid var(--border);cursor:pointer"><input type="checkbox" style="accent-color:var(--accent)"/> ${p}</label>`).join('')}
+  </div></div>
+  <div class="form-group" style="margin-top:16px"><label class="form-label">Preferred Batch Timing</label>
+  <select class="form-select form-input">
+    <option>Morning (9 AM - 12 PM)</option>
+    <option>Afternoon (1 PM - 4 PM)</option>
+    <option>Evening (6 PM - 9 PM)</option>
+    <option>Weekend (Sat-Sun)</option>
+  </select></div>
+  <div class="form-group"><label class="form-label">Study Mode</label>
+  <select class="form-select form-input"><option>Online (Live Classes)</option><option>In-Person (London Campus)</option><option>Hybrid</option></select></div>`,
+
+  // Step 4 - Payment
+  `<h3 style="font-weight:700;margin-bottom:20px">Payment & Submission</h3>
+  <div class="form-group"><label class="form-label">Select Plan</label>
+  <select class="form-select form-input"><option>Basic — £149/month</option><option>Premium — £299/month (Recommended)</option><option>Fast Track — £499/month</option></select></div>
+  <div class="form-group"><label class="form-label">Payment Method</label>
+  <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:8px">
+    <label style="flex:1;min-width:120px;padding:12px;border:1px solid var(--border);border-radius:10px;cursor:pointer;display:flex;align-items:center;gap:8px;font-size:13px"><input type="radio" name="pay" style="accent-color:var(--accent)" checked/> 💳 Card</label>
+    <label style="flex:1;min-width:120px;padding:12px;border:1px solid var(--border);border-radius:10px;cursor:pointer;display:flex;align-items:center;gap:8px;font-size:13px"><input type="radio" name="pay" style="accent-color:var(--accent)"/> 🏦 Bank Transfer</label>
+    <label style="flex:1;min-width:120px;padding:12px;border:1px solid var(--border);border-radius:10px;cursor:pointer;display:flex;align-items:center;gap:8px;font-size:13px"><input type="radio" name="pay" style="accent-color:var(--accent)"/> 📅 Installments</label>
+  </div></div>
+  <div style="padding:16px;background:rgba(108,99,255,0.08);border:1px solid rgba(108,99,255,0.2);border-radius:12px;margin-bottom:20px">
+    <div style="font-weight:700;margin-bottom:8px">Application Summary</div>
+    <div style="font-size:13px;color:var(--text2);display:flex;flex-direction:column;gap:4px">
+      <div>✅ ACCA Papers: Selected above</div>
+      <div>✅ Batch: As preferred</div>
+      <div>✅ Start Date: June 2, 2025</div>
+      <div>✅ First payment due on enrollment</div>
+    </div>
+  </div>
+  <label class="form-check" style="margin-bottom:16px;font-size:13px"><input type="checkbox" style="accent-color:var(--accent)"/> I agree to the <a href="#" style="color:var(--accent2)">Terms & Conditions</a> and <a href="#" style="color:var(--accent2)">Privacy Policy</a></label>`,
+];
+
+function initStepForm() {
+  currentStep = 1;
+  renderStep();
+}
+
+function renderStep() {
+  document.getElementById('stepContent').innerHTML = stepContents[currentStep - 1];
+  // Update indicators
+  document.querySelectorAll('.step-item').forEach((item, i) => {
+    const n = i + 1;
+    item.classList.toggle('active', n === currentStep);
+    item.classList.toggle('done', n < currentStep);
+    if (n < currentStep) item.querySelector('.step-circle').textContent = '✓';
+    else item.querySelector('.step-circle').textContent = n;
+  });
+  const fillPct = (currentStep - 1) / (totalSteps - 1) * 100;
+  document.getElementById('stepFill').style.width = fillPct + '%';
+  document.getElementById('stepPrev').style.display = currentStep > 1 ? '' : 'none';
+  const nextBtn = document.getElementById('stepNext');
+  if (currentStep === totalSteps) {
+    nextBtn.textContent = '🎓 Submit Application';
+    nextBtn.onclick = submitApplication;
+  } else {
+    nextBtn.textContent = 'Next Step →';
+    nextBtn.onclick = () => changeStep(1);
+  }
+}
+
+function changeStep(dir) {
+  currentStep = Math.max(1, Math.min(totalSteps, currentStep + dir));
+  renderStep();
+}
+
+function submitApplication() {
+  showToast('🎉 Application submitted!', 'Our team will contact you within 24 hours.', '✅');
+  closeModal('registerModal');
+}
+
+// =============================================
+// PROGRESS BARS ANIMATION ON SCROLL
+// =============================================
+const progObserver = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.querySelectorAll('.progress-fill').forEach(bar => {
+        const w = bar.style.width;
+        bar.style.width = '0';
+        setTimeout(() => bar.style.width = w, 100);
+      });
+    }
+  });
+}, { threshold: 0.3 });
+document.querySelectorAll('.hero-card-main').forEach(el => progObserver.observe(el));
+
+// =============================================
+// WAVE BARS
+// =============================================
+const waveEl = document.createElement('div');
+waveEl.className = 'hero-wave';
+for (let i = 0; i < 20; i++) {
+  const b = document.createElement('div');
+  b.className = 'wave-bar';
+  b.style.cssText = `height:${Math.random()*20+8}px;animation-delay:${i*0.1}s;background:var(--accent${i%3===0?'':i%3===1?'2':'3'})`;
+  waveEl.appendChild(b);
+}
+document.getElementById('hero').appendChild(waveEl);
+
+// =============================================
+// KEYBOARD SHORTCUT (CMD+K)
+// ====
